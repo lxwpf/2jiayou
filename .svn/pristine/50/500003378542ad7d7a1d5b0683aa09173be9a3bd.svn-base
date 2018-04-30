@@ -1,0 +1,100 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>学院</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<link rel="stylesheet" href="css/schoolPage.css" />
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+		
+		<link rel="stylesheet" href="js/widget/swiper/swiper.css" /><!--swiper插件-->
+		<script type="text/javascript" src="js/widget/swiper/swiper.min.js" ></script><!--swiper插件-->
+		
+	</head>
+	<body>
+		<div class="broadcast">
+			<div class="swiper-container">
+			  <div class="swiper-wrapper" id="swiper">
+			    <div class="swiper-slide"><img src="img/college/c-1-2.png"/></div>
+			    <div class="swiper-slide"><img src="img/college/c-1.png"/></div>
+			  </div>
+			  <div class="swiper-pagination"></div>
+			</div>
+		</div>
+		<div class="type">
+			<ul class="type-ul" id="list">
+				
+			</ul>
+		</div>
+		<div id="yspList">
+			<!--<div class="middle-a">
+				<p>普洱茶啥叫时间萨达萨达是答不上</p>
+			</div>
+			<a href="newMultimedia.html">
+				<div class="video">
+					<img src="img/common/4.png" class="bofang"/>
+					<img src="img/college/c-4.png" class="bg"/>
+				</div>
+			</a>
+		
+			<div class="video-introduce">
+				共<span>102</span>集
+				<span>24</span>次播放
+				<span class="money">免费</span>
+			</div>
+			-->
+		</div>
+		
+		<!--<div class="bottom-hide"></div>-->
+		<div class="pd"></div>
+		<div class="footer">
+			<ul class="clearfloat">
+				<li>
+					<a href="housekeeper.html">
+						<img src="img/common/1.png" />
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/2-2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="person.html">
+						<img src="img/common/3.png" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		<script type="text/javascript" src="js/schoolPage.js" ></script>
+		<script>
+			var mySwiper = new Swiper('.swiper-container', {
+				autoplay: true,//可选选项，自动滑动
+				pagination: {
+				  el: '.swiper-pagination',
+				},
+				uniqueNavElements: true,
+			});
+		</script>
+	</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<meta name="version" content="2.0.1.20180126-RELEASE">
+		<title>家游学院</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/jquery-1.7.2.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>		
+		<link rel="stylesheet" href="css/index.css" /><!--根据页面需要引入自己当前页css-->
+	</head> 
+	<body>		
+	<script type="text/javascript">
+		//判断是否新老用户并获取token
+		function judgeUser() {
+			if(getQueryString('flag') == '0'){ //flag 0  老用户
+				location.href = jumpHousekeeper;
+				//console.log('location.href===000000000');	
+			}else{
+				location.href = jumpGuiding;
+				//console.log('location.href===111111111');	
+			}	
+		}
+
+		judgeUser();
+
+	</script>
+	</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>发布素材</title>		
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		
+		<link rel="stylesheet" href="css/sendMaterial.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/sendMaterial.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<input type="file" style="display: none;" class="upfile" id="FileUpload" name="file"/>
+		<input type="file" style="display: none;" class="upfile" id="FileUpload2" name="file"/>
+		<input type="hidden" id="details1" />
+		<input type="hidden" id="details2" />
+		<!--头部-->
+		<div class="head-material">
+			<input type="text" class="input-title" placeholder="请添加标题" id="inputTitle"/>
+			<div class="choose-type">
+			</div>
+		</div>
+		<!--内容描述-->
+		<textarea class="textarea" placeholder="请添加内容描述" id="textareaText" autofocus></textarea>
+		<!--照片加描述-->
+		<div class="img-container">
+			<div class="pic-text">
+				<img class="left-img" src="img/common/addPic.png" id="img1"/>
+				<textarea class="img-textarea" placeholder="请添加相关描述" id="detail1" onkeyup="wordStatic1(this);" maxlength="200"  rows="3"></textarea>
+				<span class="recode"><span id="pic1">0</span>/200</span>
+			</div>
+		</div>
+		<!--照片加描述-->
+		<div class="img-container">
+			<div class="pic-text">
+				<img class="left-img" src="img/common/addPic.png" id="img2"/>
+				<textarea class="img-textarea" placeholder="请添加相关描述" id="detail2" onkeyup="wordStatic2(this);" maxlength="200"  rows="3"></textarea>
+				<span class="recode"><span id="pic2">0</span>/200</span>
+			</div>
+		</div>
+		<!--提交按钮-->
+		<div class="btn-submit">
+			<span>提交</span>
+		</div>
+		
+		<!--点击显示部分-->
+		<div class="type-page dn">
+			<div class="type-head clear">
+				<ul class="type-ul">
+					<!--<li><span class="select-li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>-->
+				</ul>
+			</div>
+		</div>
+		
+		<script>
+			$(".choose-type").on("click",function(){
+				var ss = $("type-page").is(":hidden");
+				console.log(ss);
+				if($(".type-page").is(":hidden")){
+					console.log(111);
+					$(".type-page").show();
+					$(".choose-type").addClass("choose-type-hide");
+					$(".choose-type").removeClass("choose-type");
+				}else{
+					console.log(222);
+					$(".type-page").hide();
+					$(".choose-type").addClass("choose-type");
+					$(".choose-type").removeClass("choose-type-hide");
+				}
+			});
+			
+			//textarea输入字符实时记录长度
+			function wordStatic1(input) {  
+	        // 获取要显示已经输入字数文本框对象  
+	        var content = document.getElementById('pic1');  
+		        if (content && input) {  
+		            // 获取输入框输入内容长度并更新到界面  
+		            var value = input.value;  
+		            // 将换行符不计算为单词数  
+		            value = value.replace(/\n|\r/gi,"");
+		            if(value.length <= 200){
+		            	// 更新计数  
+		            	content.innerText = value.length; 
+		            }
+		        }  
+	    	}
+			function wordStatic2(input) {
+	        // 获取要显示已经输入字数文本框对象  
+	        var content = document.getElementById('pic2');  
+		        if (content && input) {  
+		            // 获取输入框输入内容长度并更新到界面  
+		            var value = input.value;  
+		            // 将换行符不计算为单词数  
+		            value = value.replace(/\n|\r/gi,"");
+		            if(value.length <= 200){
+		            	// 更新计数  
+		            	content.innerText = value.length; 
+		            }
+		        }  
+	    	} 
+		</script>
+	</body>
+</html>

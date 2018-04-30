@@ -1,0 +1,91 @@
+*{
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+}
+.broadcast{
+	height: 4.72972972972973rem;
+}
+.type{
+    height: 5.145946rem;
+	border-bottom: 0.2702702702702703rem solid #E5E5E4;
+}
+.type ul{
+    height: 5.145946rem;
+}
+.type ul li{
+	width: 24.5%;
+	text-align: center;
+	float: left;
+	margin-top: 0.2702702702702703rem;
+}
+.type ul li img{
+	height: 1.3513513513513513rem;
+	width: 1.3513513513513513rem;
+}
+.middle-a{
+	height: 1.0810810810810811rem;
+	line-height: 1.0810810810810811rem;
+}
+.middle-a p{
+	text-indent: 0.5108108108108109rem;
+}
+.video{
+	height: 5.675675675675675rem;
+	position: relative;
+}
+.video .bofang{
+	height: 1.8324324324324325rem;
+	width: 1.8324324324324325rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.8810810810810811rem;
+	top: 50%;
+	margin-top: -0.8810810810810811rem;
+}
+.video .bg{
+	height: 100%;
+	width: 100%;
+}
+.video-introduce{
+	height: 1.0810810810810811rem;
+	line-height: 1.0810810810810811rem;
+	margin: 0 0.5405405405405406rem;
+}
+.video-introduce .money{
+	float: right;
+}
+.video-introduce .money::before{
+	content: "";
+	display: inline-block;
+	background: url(../img/schoolPage/money-icon.png) no-repeat;
+	background-size: 100% 100%;
+	height: 0.6756756756756757rem;
+    width: 0.6756756756756757rem;
+    vertical-align: -0.1891891891891892rem;
+    margin-right: 0.13513513513513514rem;
+}
+.bottom-hide{
+	height: 10px;
+	background: #E5E5E4;
+}
+.swiper-slide img{
+	height: 100%;
+	width: 100%;
+}
+.pd{
+	padding-bottom: 1.7837837837837838rem;
+}
+#list li{
+	border-bottom: 0.013513513513513514rem solid #D8D8D8;
+	border-right: 0.013513513513513514rem solid #D8D8D8;
+	padding: 0.18513513513513514rem 0;
+	margin: 0;
+}
+#list li span{
+	display: inline-block;
+	font-size: 0.4864864864864865rem;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}

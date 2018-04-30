@@ -1,0 +1,78 @@
+body,html{
+	background: #F0F0F0;
+}
+.img-icon{
+	height: 5.675675675675675rem;
+	width: 100%;
+	margin-bottom: 0.2702702702702703rem;
+}
+table{
+	font-size: 0.5405405405405406rem;
+	background: white;
+	width: 100%;
+}
+table .td-left{
+	width: 2.7027027027027026rem;
+	min-width: 2.7027027027027026rem;
+}
+table td{
+	padding: 0 0.2702702702702703rem;
+	border: 0.02702702702702703rem solid #F0F0F0;
+}
+.middle-hint{
+	height: 1.5405405405405406rem;
+	margin-left: 0.5405405405405406rem;
+	line-height: 1.4054054054054055rem;
+	font-size: 0.5405405405405406rem;
+}
+.middle-hint::before{
+	content: "";
+	display: inline-block;
+	background: url(../img/person/5.png) no-repeat;
+	background-size: 100% 100%;
+	height: 0.6648648648648648rem;
+    width: 0.6648648648648648rem;
+    vertical-align: -0.18288289189189186rem;
+    margin-right: 0.26666666666666666rem;
+}
+.activity-infomation{
+	font-family: PingFangSC-Regular;
+	font-size: 0.4864864864864865rem;
+	color: #222222;
+	letter-spacing: 0;
+	background: white;
+	padding: 0.2702702702702703rem;
+}
+.bottom{
+	height: 1.3243243243243243rem;
+	width: 100%;
+	position: fixed;
+	bottom: 0;
+	font-size: 0.4864864864864865rem;
+}
+.bottom-left{
+	width: 56.3%;
+	height: 1.3243243243243243rem;
+	line-height: 1.3243243243243243rem;
+	display: inline-block;
+	background: white;
+}
+.btn-submit{
+	display: inline-block;
+	width: 41%;
+	height: 1.3243243243243243rem;
+	line-height: 1.3243243243243243rem;
+	background: #ffb62a;
+	text-align: center;
+	color: white;
+}
+.bottom-left::before{
+	content: "";
+	display: inline-block;
+	background: url(../img/schoolPage/money-icon.png) no-repeat;
+	background-size: 100% 100%;
+	height: 0.6756756756756757rem;
+    width: 0.6756756756756757rem;
+    vertical-align: -0.1491891891891892rem;
+    margin-left: 0.5405405405405406rem;
+}

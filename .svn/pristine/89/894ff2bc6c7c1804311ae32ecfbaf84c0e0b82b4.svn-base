@@ -1,0 +1,45 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	background: #f0eff5;
+}
+img{
+	width: 100%;
+}
+.zsbg{
+	height: 100%;
+	width: 100%;
+}
+.bg{
+	background: url(../img/examination/get/BG_bk.png) no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+}
+.name{
+    left: 20%;
+    top: 29%;
+    font-size: 42px;
+    position: absolute;
+    color: #000000;
+    font-family: '黑体';
+}
+.btn-group{
+    height: 25%;
+    width: 100%;
+    top: 75%;
+    position: absolute;
+}
+
+.save{
+	position: absolute;
+	bottom: 0;
+    width: 100%;
+}
+
+.home{
+	position: absolute;
+	bottom: 40%;
+    left: 16%;
+    width: 68%;
+}

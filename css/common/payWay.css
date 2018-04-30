@@ -1,0 +1,116 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	height: 100%;
+	background: #F3F3F3;
+}
+.pay-container{
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+	background: white;
+}
+.margin-comm-left{
+	margin-left: 0.5405405405405406rem;
+}
+.margin-comm-right{
+	margin-right: 0.5405405405405406rem;
+}
+.margin-comm-top{
+	margin-top: 0.5405405405405406rem;
+}
+.margin-comm-bottom{
+	margin-bottom: 0.5405405405405406rem;
+}
+.pay-container .up{
+	height: 4.945945945945946rem;
+	padding-top: 0.5405405405405406rem;
+}
+.pay-container .title{
+	font-size: 0.5405405405405406rem;
+	color: #666666;
+}
+.pay-container .pay-content{
+	height: 2.7027027027027026rem;
+	margin-top: 0.2702702702702703rem;
+	margin-bottom: 0.2702702702702703rem;
+}
+.pay-container .pay-content img{
+	height: 100%;
+	width: 2.7027027027027026rem;
+	float: left;
+	margin-right: 0.2702702702702703rem;
+}
+.pay-container .pay-content p{
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+}
+.pay-container .up .right{
+	float: right;
+}
+.pay-container .money{
+	height: 1.0810810810810811rem;
+	background: white;
+	line-height: 1.0810810810810811rem;
+}
+.pay-container .money .span-two{
+	float: right;
+}
+.bottom-line{
+	height: 10px;
+	background: #F3F3F3;
+}
+.small-bottom-line{
+	height: 1px;
+	background: #F3F3F3;
+}
+.orange-color{
+	color: #FF8C00;
+}
+.gou{
+	width: 0.7027027027027027rem;
+	height: 0.5135135135135135rem;
+}
+.money .span-two{
+	float: right;
+	margin-right: 0.5405405405405406rem;
+	margin-top: 0.3405405405405406rem;
+}
+.dn{
+	display: none;
+}
+.sure-btn{
+	height: 1.3243243243243243rem;
+	width: 100%;
+	background: #FF8C00;
+	text-align: center;
+	font-size: 0.4864864864864865rem;
+	color: white;
+	line-height: 1.3243243243243243rem;
+	position: absolute;
+	bottom: 0;
+}
+
+.pay-qrcode{
+	position: absolute;
+    top: 50%;
+    margin-top: -4rem;
+    left: 50%;
+    margin-left: -3.6rem;
+    height: 7.513514rem;
+    width: 7.513514rem;
+    display: none;
+    background: url(/resources/img/pay/pay_qrcode.png) no-repeat center;
+    cursor: pointer;
+    background-size: 100% 100%;
+}
+.pay_img{
+	position: relative;
+    top: 50%;
+    margin-top: -3rem;
+    left: 50%;
+    margin-left: -2.5rem;
+    height: 5.108108rem;
+    width: 5.108108rem;
+}

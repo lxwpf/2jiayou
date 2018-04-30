@@ -1,0 +1,326 @@
+@charset "utf-8";
+html,body{
+	background-color:#f0eff5;
+}
+.video{
+	height: 5.8rem;
+}
+.video video{
+	width:10rem;
+	height: 5.8rem;
+}
+.wrapperVideo{
+	margin: 0 0.4rem;
+	border: 0.013333333333333334rem solid blue;
+}
+.articleTxt{
+	background-color:#fff;
+	padding:0.4rem;
+}
+.articleTxt .title{
+	font-size:0.64rem;
+	color:#333;
+	line-height:0.8266666666666667rem;
+	
+}
+.articleTxt .titleInfor{
+	font-size:0.4rem;
+	line-height:0.6666666666666666rem;
+	color:#888;
+}
+.articleTxt .titleInfor span{
+	margin-left:0.13333333333333333rem;
+}
+.articleTxt .txt{
+	margin-top:0.4rem;
+}
+.articleTxt .txt p{
+	font-size:0.48rem;
+	color:#333;
+	line-height:0.6666666666666666rem;
+}
+.shareBox{
+	padding:0.9333333333333333rem 0 0.48rem 0;
+	width:100%;
+	background-color:#fff;
+}
+
+
+.shareBox ul{
+	width:100%;
+}
+.shareBox ul li{
+	float:left;
+	width:3.3333333333333335rem;
+	height:2.4rem;
+}
+.shareBox ul li .state{
+	margin:0.13333333333333333rem auto;
+	margin-bottom:0.13333333333333333rem;
+	position:relative;
+	width:1.36rem;
+	height:1.36rem;
+}
+.shareBox ul li .state .noget{
+	display:block;
+	width:1.36rem;
+	height:1.36rem;	
+}
+.shareBox ul li .state .get{
+	position:absolute;
+	top:0;
+	left:0;
+	width:1.36rem;
+	height:1.36rem;
+}
+.shareBox ul li .show{
+	text-align:center;
+	font-size:0.4rem;
+	color:#888;
+}
+
+
+
+.readTitle{
+	margin:0.4rem 0 0.4rem 0.4rem;
+	position:relative;
+	width:3.8rem;
+	height:0.5333333333333333rem;
+	line-height:0.5333333333333333rem;
+	font-size:0.4rem;
+	color:#333;
+	text-align:center;
+}
+.readTitle img.icon{
+	position:absolute;
+	top:0.06666666666666667rem;
+	left:0px;
+	width:0.7466666666666667rem;
+	height:0.5333333333333333rem;
+}
+
+.totalVideo{
+	padding:0.2rem 0.4rem;
+	background-color:#fff;
+}
+
+
+.totalVideo .stowArticle{
+	height: 2.88rem;
+	margin: 0.48rem 0;
+	overflow: hidden;
+}
+.totalVideo .stowArticle .scroller{
+	height: 100%;
+	width: auto;
+}
+.totalVideo .stowArticle .scroller ul li{
+	display: block;
+	float: left;
+	height: 2.9066666666666667rem;
+	width: 2.933333333333333rem;
+	margin-right: 0.26666666666666666rem;
+	position: relative;
+}
+.totalVideo .stowArticle .scroller ul li .liImg{
+	height: 2.2666666666666666rem;
+	width: 100%;
+}
+.totalVideo .stowArticle .scroller ul li .video{
+	position: absolute;
+	height: 1.2rem;
+	width: 1.2rem;
+	background: url(../img/common/4.png) no-repeat;
+	background-size: 100% 100%;
+	top: 50%;
+	left: 50%;
+	margin: -0.8666666666666667rem 0 0 -0.6rem;
+}
+.totalVideo .stowArticle .scroller ul li p{
+	width: 2.933333333333333rem;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	font-size: 0.4rem;
+	color: #888888;
+}
+
+
+.commentsTitle{
+	margin:0.4rem 0 0.4rem 0.4rem;
+	position:relative;
+	width:3.3333333333333335rem;
+	height:0.5333333333333333rem;
+	line-height:0.5333333333333333rem;
+	font-size:0.4rem;
+	color:#333;
+	text-align:center;
+}
+.commentsTitle img.icon{
+	position:absolute;
+	top:-0.06666666666666667rem;
+	left:0px;
+	width:0.7733333333333333rem;
+	height:0.6133333333333333rem;
+}
+
+
+
+
+.commentsBox{
+	width:100%;
+	background-color:#fff;
+}
+.commentsBox ul{
+	width:100%;
+}
+.commentsBox ul li{
+	padding:0 0.4rem;
+	height:2.4rem;
+	border-bottom:0.13333333333333333rem solid #f0eff5;
+}
+.commentsBox ul li .head{
+	float:left;
+	width:1.7333333333333334rem;
+	height:2.4rem;
+}
+.commentsBox ul li .head img{
+	margin:0.4666666666666667rem auto;
+	display:block;
+	width:1.4666666666666666rem;
+	height:1.4666666666666666rem;
+	border-radius:0.7333333333333333rem;
+}
+.commentsBox ul li .comment{
+	float:right;
+	width:7.066666666666666rem;
+	height:2.4rem;
+}
+.commentsBox ul li .comment .name{
+	font-size:0.48rem;
+	color:#333;
+	line-height:0.9333333333333333rem;
+	margin-top: 0.2rem;
+}
+.commentsBox ul li .comment .name strong{
+	display:inline-block;
+	overflow:hidden;	
+	width:2.6rem;
+}
+.commentsBox ul li .comment .name span{
+	margin-left:0.26rem;
+}
+.commentsBox ul li .comment .time{
+	float: right;
+	font-size: 0.4rem;
+	color: #888888;
+}
+.commentsBox ul li .comment p{
+	font-size:0.4rem;
+	color:#333;
+	line-height:0.6rem;
+}
+
+
+
+.nouse{
+	width:0.02666666666666667rem;
+	height:1.52rem;
+}
+
+
+
+.addComments{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:10rem;
+	height:1.52rem;
+	background-color:#fff;
+	border-top:0.013333333333333334rem solid #e6e6e6;
+}
+.addComments .box{
+	position:relative;
+	width:10rem;
+	height:1.52rem;	
+}
+.addComments .box input{
+	margin:0.52rem 0 0 0.6666666666666666rem;
+	border:none;
+	font-size:0.48rem;
+	line-height:0.48rem;
+}
+.addComments .box .send{
+	position:absolute;
+	top:0.26666666666666666rem;
+	right:0.4rem;
+	height:0.9866666666666667rem;
+	width:2.08rem;
+	border-radius:0.06666666666666667rem;
+	font-size:0.48rem;
+	line-height:0.9866666666666667rem;
+	color:#fff;
+	text-align:center;
+	background-color:#ffb62a;
+}
+
+
+/*分享弹窗样式*/
+.popupShare .mask{
+	position:fixed;
+	width:100%;
+	height:100%;
+	background-color:#000;
+	opacity:0.7;
+	z-index:100;
+	top:0;
+	left:0;
+}
+.popupShare .content{
+	position:fixed;
+	width:100%;
+	height:100%;
+ 	left:0;
+ 	top:0;
+	z-index:101;
+}
+.popupShare .content .shareTip{
+	display:block;
+	width:8.24rem;
+	height:4.973333333333334rem;
+	margin:1rem auto;
+}
+.popupShare .content .shareSure{
+	display:block;
+	width:3.4rem;
+	height:1.3866666666666667rem;	
+	margin:3rem auto;
+}	
+/*分享弹窗样式*/
+
+/* 评论成功 */
+.popupSuccess{
+	position:fixed;
+	top:50%;
+	left:50%;
+	margin-left:-1.8rem;
+	margin-top:-1.64rem;
+	width:3.6rem;
+	height:3.28rem;
+}
+.popupSuccess img{
+	display:block;
+	width:3.6rem;
+	height:3.28rem;	
+}
+.popupSuccess .tip{
+	position:absolute;
+	left:0;
+	bottom:0.6133333333333333rem;
+	width:3.6rem;
+	height:0.5333333333333333rem;
+	font-size:0.48rem;
+	color:#fff;
+	text-align:center;	
+}
+/* 评论成功 */

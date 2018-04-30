@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>实名认证</title>		
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		
+		<link rel="stylesheet" href="css/certification.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/certification.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<!--头部进度-->
+		<div class="head">
+			<div class="circle-manage">
+				<span class="circle-select"></span>
+				<span class="line"></span>
+				<span class="circle"></span>
+				<span class="line"></span>
+				<span class="circle"></span>
+			</div>
+			<div class="circle-text">
+				<span>基本信息</span>
+				<span class="span2">实名认证</span>
+				<span>完成认证</span>
+			</div>
+		</div>
+		<!--头部进度-->
+		
+		<!--提示-->
+		<div class="middle-hint">
+			<span>填写您的基本信息</span>
+		</div>
+		
+		<!--用户输入区-->
+		<div class="user-input-area">
+			<div class="item">
+				<span class="icon-1"></span>
+				<input type="text" class="real-name" placeholder="请填写姓名" id="realName"/>
+			</div>
+			<div class="item">
+				<span class="icon-2"></span>
+				<input type="text" class="real-name" placeholder="请输入手机号" id="phoneNumber"/>
+			</div>
+			<div class="item">
+				<span class="icon-3"></span>
+				<input type="text" class="real-name" placeholder="请输入验证码" id="input2"/>
+				<span class="getValidata" id="sendCode">获取验证码</span>
+			</div>
+		</div>
+		
+		<!--提交按钮-->
+		<div class="btn-submit" id="btnSubmit">
+			<span>下一步</span>
+		</div>
+		<div class="hintBox dn" id="chint"></div>
+	</body>
+</html>

@@ -1,0 +1,52 @@
+## 前端规范
+
+1前端目录结构看给的demo
+
+2基本一个页面，对应一个css和一个js和一个图片文件夹
+形如 index.html - index.css - index.js - index图片文件夹
+
+3公共css js 或者图片都在对应的common目录下
+例如 公共css在  /css/common
+
+4不论是.html和 .css 和 .js 和文件夹 命名统一采用驼峰命名方式
+形如 aboutUs    
+css的class命名和 js的变量 方法名 都是驼峰命名方式
+
+写css样式的基本不写id ;写jquery赋值或者动效都都用id选择器，自行添加id
+
+5添加公共css和js的时候要互相告知
+
+6本地缓存采用localStorage
+window.localStorage.setItem('uname',name)
+window.localStorage.getItem('uname')
+window.localStorage.clear()
+
+
+
+
+
+## 页面说明
+
+index   闪屏页
+login   登陆注册页
+guiding  引导页
+guiding2 引导页2
+
+
+housekeeper 管家
+articleList 文章列表
+article     文章详情图文
+article2    文章详情视频
+article3    文章详情音乐
+
+
+college 学院
+articleDivision  学院全部分类
+
+person 我的
+editInformation  编辑个人信息
+myCollection 我的收藏列表
+browsingHistory 我的浏览历史
+bindPhone 绑定手机
+feedback   意见反馈
+aboutUs   关于我们

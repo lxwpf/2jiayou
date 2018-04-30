@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>家游学院</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+
+		<link rel="stylesheet" href="css/common/自己改相应的页面标题.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/自己改相应的页面标题.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+			
+	</body>
+
+</html>

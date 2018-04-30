@@ -1,0 +1,209 @@
+body,html{
+	background: #F0F0F0;
+}
+.dn{
+	display: none;
+}
+*{
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+}
+.broadcast{
+	height: 4.72972972972973rem;
+}
+.activity-title{
+	height: 1.0810810810810811rem;
+	background: white;
+}
+.activity-title span{
+	display: inline-block;
+	width: 32%;
+	height: 1.0810810810810811rem;
+	line-height: 1.0810810810810811rem;
+	text-align: center;
+}
+.activity-title span::after{
+	content: "";
+    display: inline-block;
+    background: url(../img/activity/down-icon.png) no-repeat;
+    background-size: 100% 100%;
+    height: 0.2535135135135135rem;
+    width: 0.3135135135135135rem;
+    margin-left: 0.13513513513513514rem;
+    vertical-align: 0.02702702702702703rem;
+}
+.type{
+    height: 5.145946rem;
+}
+.clear:after{
+	content:"&nbsp;";display:block;width:100%;height:0;overflow:hidden;clear:both;visibility:hidden;
+}
+.type-head ul{
+	background: white;
+}
+.type-head ul li{
+	float: left;
+	width: 25%;
+	height: 1.6216216216216217rem;
+	line-height: 1.6216216216216217rem;
+	text-align: center;
+}
+.type-head ul li .li-span{
+	display: inline-block;
+	height: 0.972972972972973rem;
+	width: 1.7297297297297298rem;
+	border: 0.02702702702702703rem solid black;
+	border-radius: 0.2702702702702703rem;
+	text-align: center;
+	line-height: 0.972972972972973rem;
+}
+.select-li-span{
+	display: inline-block;
+	height: 0.972972972972973rem;
+	width: 1.7297297297297298rem;
+	border-radius: 0.2702702702702703rem;
+	text-align: center;
+	line-height: 0.972972972972973rem;
+	background: #FF8C00;
+	color: white;
+}
+.type-head{
+	background: white;
+}
+.type ul{
+    height: 5.145946rem;
+}
+#yspList li{
+	margin-top: 1.5%;
+	background: white;
+}
+.type ul li{
+	width: 24.5%;
+	text-align: center;
+	float: left;
+	margin-top: 0.2702702702702703rem;
+}
+.type ul li img{
+	height: 1.3513513513513513rem;
+	width: 1.3513513513513513rem;
+}
+.middle-a{
+	height: 1.0810810810810811rem;
+	line-height: 1.0810810810810811rem;
+}
+.middle-a p{
+	text-indent: 0.3108108108108109rem;
+	overflow: hidden;
+	text-overflow:ellipsis;
+  	-o-text-overflow:ellipsis;
+  	-webkit-text-overflow:ellipsis;
+  	-moz-text-overflow:ellipsis;
+  	white-space:nowrap;
+}
+.video{
+	height: 5.675675675675675rem;
+	position: relative;
+}
+.video .bofang{
+	height: 1.8324324324324325rem;
+	width: 1.8324324324324325rem;
+	position: absolute;
+	left: 50%;
+	margin-left: -0.8810810810810811rem;
+	top: 50%;
+	margin-top: -0.8810810810810811rem;
+}
+.video .bg{
+	height: 100%;
+	width: 100%;
+}
+.video .video-bottom{
+	position: absolute;
+	width: 100%;
+	bottom: 0;
+	height: 0.9459459459459459rem;
+	background: rgba(0,0,0,0.5);
+	line-height: 0.9459459459459459rem;
+}
+.video .video-bottom .b-left{
+	color: white;
+	float: left;
+	margin-left: 5.3%;
+}
+.video .video-bottom .b-right{
+	color: white;
+	float: right;
+	margin-right: 2.7%;
+}
+.video-introduce{
+	height: 1.0810810810810811rem;
+	line-height: 1.0810810810810811rem;
+	margin: 0 0 0 0.5405405405405406rem;
+}
+.video-introduce .money::before{
+	content: "";
+	display: inline-block;
+	background: url(../img/schoolPage/money-icon.png) no-repeat;
+	background-size: 100% 100%;
+	height: 0.6756756756756757rem;
+    width: 0.6756756756756757rem;
+    vertical-align: -0.1891891891891892rem;
+    margin-right: 0.13513513513513514rem;
+}
+.video-introduce .right-btn{
+	float: right;
+	width: 2.5675675675675675rem;
+	height: 1.0810810810810811rem;
+	font-size: 0.4864864864864865rem;
+	color: white;
+	text-align: center;
+	line-height: 0.9459459459459459rem;
+	background: #ffb62a;
+	
+}
+.bottom-hide{
+	height: 0.2702702702702703rem;
+	background: #E5E5E4;
+}
+.swiper-slide img{
+	height: 100%;
+	width: 100%;
+}
+.pd{
+	padding-bottom: 1.7837837837837838rem;
+}
+#list li{
+	border-bottom: 0.013513513513513514rem solid #D8D8D8;
+	border-right: 0.013513513513513514rem solid #D8D8D8;
+	padding: 0.18513513513513514rem 0;
+	margin: 0;
+}
+#list li span{
+	display: inline-block;
+	font-size: 0.4864864864864865rem;
+	width: 100%;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+.activity-icon{
+	float: left;
+	height: 0.6486486486486487rem;
+	line-height: 0.6486486486486487rem;
+	width: 1.4594594594594594rem;
+	font-size: 0.43243243243243246rem;
+	margin-top: 0.1891891891891892rem;
+	background: url(../img/activity/activity-type.png) no-repeat;
+	background-size: 100% 100%;
+	text-align: center;
+}
+.activity-icon .text{
+	margin-left: 0.16216216216216217rem;	
+}
+.type-page{
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 1.2162162162162162rem;
+	background: rgba(0,0,0,0.5);
+}

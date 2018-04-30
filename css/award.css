@@ -1,0 +1,71 @@
+.dn{
+	display: none;
+}
+html,body{
+	height: 98%;
+}
+.remind{
+	font-size: 0.4983783783783784rem;
+	color: #FF8C00;
+	margin-top: 3%;
+	margin-left: 2.7%;
+}
+.list{
+	margin: 6.4% 5.3% 0 5.3%;
+}
+.list li{
+	margin-top: 4.5%;
+	border-bottom: 0.02702702702702703rem solid #E5E5E5;
+}
+.icon{
+	height: 0.53rem;
+    width: 0.486rem;
+	margin-right: 2.7%;
+	vertical-align: -0.08108108108108109rem;
+}
+.input{
+	height: 1.7459459459459459rem;
+	width: 60%;
+	font-size: 0.3783783783783784rem;
+	border: none;
+}
+.input::-webkit-input-placeholder { /* WebKit browsers */ 
+	font-size:0.3783783783783784rem;
+} 
+.input::-moz-placeholder { /* Mozilla Firefox 4 to 18 */ 
+	font-size:0.3783783783783784rem;
+} 
+.input::-moz-placeholder { /* Mozilla Firefox 19+ */ 
+	font-size:0.3783783783783784rem;
+} 
+.input::-ms-input-placeholder { /* Internet Explorer 10+ */ 
+	font-size:0.3783783783783784rem;
+}
+
+.btn{
+	height: 1.3243243243243243rem;
+	line-height: 1.3243243243243243rem;
+	margin: 10.8% 5.3% 0 5.3%;
+	background: #E68124;
+	border-radius: 0.2702702702702703rem;
+	text-align: center;
+	color: white;
+	font-size: 0.4864864864864865rem;
+}
+
+/*弹窗*/
+.showAlert{
+	width: 6.081081081081081rem;
+	height: 1.3513513513513513rem;
+	line-height: 1.3513513513513513rem;
+	border-radius: 0.2702702702702703rem;
+	text-align: center;
+	color: white;
+	font-size: 0.4864864864864865rem;
+	background: rgba(0,0,0,0.5);
+	position: absolute;
+	top: 50%;
+	margin-top: -0.6756756756756757rem;
+	left: 50%;
+	margin-left: -3.027027027027027rem;
+}

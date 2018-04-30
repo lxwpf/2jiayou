@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>基本信息</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局常量-->
+		
+		<link rel="stylesheet" href="css/guiding.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/guiding.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head> 
+	<body>
+		<div class="title">
+			<span class="text1">让我们认识一下</span>
+			<a class="jump" href="housekeeper.html">跳过</a>
+		</div>
+		<div class="wrapper">
+			<div class="column sex" id="sex">
+				<div>性别</div>
+				<span>男</span><span>女</span>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="column age" id="age">
+				<div>年龄段</div>
+				<span>40后</span><span>50后</span><span>60后</span><span>70后</span><span>其它</span>
+			</div>
+		</div>
+		<div class="wrapper">
+			<div class="column xueli" id="xueli">
+				<div>学历</div>
+				<span>初中及以下</span><span>高中</span><span>大专及以上</span>
+			</div>
+		</div>
+		<a class="btn" href="javascript:void(0)" id="nextPage">下一步</a>
+	</body>
+
+</html>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>关于我们</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+
+		<link rel="stylesheet" href="css/aboutUs.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/aboutUs.js" ></script><!--根据页面需要引入自己当前页js-->
+		
+	</head>
+	<body>
+		<!--head-->
+		<div class="head">
+			<img src="img/aboutUs/logo.png" class="headIcon" />
+			<div class="version">V1.0</div>
+		</div>
+		<!--head-->
+		<!-- aboutUs -->
+		<div class="introduceWrapper">
+			<p class="title">简介</p>
+			<p class="introduce">家游学院致力打造在线中老学习娱乐平台，以“父母的加油站，儿女的孝心院”为初衷，让所有的父母能在互联网时代体验学习，交友，休闲，娱乐带来的乐趣，目前家游学院客户端已经涵盖二十余大兴趣板块，包括音乐、舞蹈、文学、摄影、娱乐、养生等，同时聚合社区联谊、社会公益、兴趣交友、健康讲座、游学等丰富多彩的线下活动，儿女不在身边一样享受家的温暖，让欢乐精彩随时奉陪</p>
+		</div>
+		<!-- aboutUs -->
+		<!-- 联系我们 -->
+		<div class="contactUsWrapper clearfloat">
+			<div class="contactUs">
+				<div class="contactUsTitle">联系我们</div>
+				<p><span>微信公众号：家游学院</span></p>
+				<p><span>新浪微博：家游学院</span></p>
+				<p><span>联系我们：0571-86925556</span></p>
+				<p><span>公司网站：www.2jiayou.com</span></p>
+			</div>
+			<div class="scanWx">
+				<img src="img/aboutUs/ercode.png" class="ercode" />
+			</div>
+		</div>
+		<!-- 联系我们 -->
+		<!-- 页脚 -->
+		<div class="pageFoot">
+			<p>@2017杭州梦虎网络科技有限公司</p>
+			<p>All right reserved</p>
+		</div>
+		<!-- 页脚 -->
+	</body>
+
+</html>

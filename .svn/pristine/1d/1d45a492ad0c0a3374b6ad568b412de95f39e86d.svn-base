@@ -1,0 +1,45 @@
+@charset "utf-8";
+.content{
+	margin: 0 0.72rem;
+}
+html,body{
+	background: #f0eff5;
+}
+.wrapper{
+	background: white;
+}
+.content .textarea{
+	padding:0.2rem 0;
+	height: 2.8666666666666667rem;
+	font-size:0.4864864864864865rem;
+	overflow:hidden;
+	border: none;
+}
+.content .bottom{
+	padding-bottom: 0.26666666666666666rem;
+	position: relative;
+}
+.content .bottom span{
+	position: absolute;
+	right: 0;
+	bottom: 0.26666666666666666rem;
+	font-size: 0.40540540540540543rem;
+	color: #a0a0a0;
+}
+.content .add{
+	height: 1.8666666666666667rem;
+	width: 1.8666666666666667rem;
+}
+.btn{
+	height: 1.2rem;
+	display: block;
+	background: #ffb62a;
+	border-radius: 0.13333333333333333rem;
+	margin: 0 0.6rem;
+	font-size: 0.4864864864864865rem;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.13333333333333333rem;
+	line-height: 1.2rem;
+	margin-top: 0.7333333333333333rem;
+}

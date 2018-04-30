@@ -1,0 +1,160 @@
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>音视频详情页面</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/json2.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<!--视频-->
+		<link rel="stylesheet" href="js/widget/video/zy.media.min.css" />
+		<script type="text/javascript" src="js/widget/video/zy.media.min.js" ></script>
+		<!--视频-->
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+
+		<link rel="stylesheet" href="css/newMultimedia.css" /><!--根据页面需要引入自己当前页css-->
+		<link rel="stylesheet" href="css/newMultimedia2.css" /><!--根据页面需要引入自己当前页css-->
+		<style>
+			
+		</style>
+	</head>
+	<body>
+		<div class="zhanwei"></div>
+		<div class="fixedVideo">
+			<div class="multiedia-container">
+				<!-- 视频播放器 -->
+				<div class="video dn" id="mvDiv">
+					<video src="" id="mv" controls="controls" autoplay="autoplay" onclick="autoPlay()"/> 
+				</div>
+				<!-- 音频播放器 -->
+				<div class="audio dn" id="avDiv">
+					<!--preload="auto"-->
+					<audio src="" id="av" controls="controls" autoplay="autoplay"/>
+				</div>
+				<!-- 视频播放器 -->
+			</div>
+			<!--选集，简介，评论-->
+			<div class="video-detail">
+				<div class="detail-left detail-btn white-background">
+					<img src="img/newMultimedia/b-1-selected.png" class="xj-img"/>
+					<span class="select-xj">选集</span>
+				</div>
+				<div class="detail-middle detail-btn B2B2B2-background">
+					<img src="img/newMultimedia/synopsis.png" class="jj-img"/>
+					<span class="detail-txt">简介</span>
+				</div>
+				<div class="detail-right detail-btn B2B2B2-background">
+					<img src="img/newMultimedia/a-1.png" class="pl-img"/>
+					<span class="detail-pl">评论</span>
+				</div>
+			</div>
+			<!--选集，简介，评论-->
+		</div>
+		<!--选集详情-->
+		<ul class="xj-ul" id="colList">
+			<li onclick="loadMaterialUrl(0,'','');">
+				<div class="xj-ul-title">加载中，请等待...</div>
+				<div class="share-right">
+					<img src="img/newMultimedia/share.png"/>
+					<span>分享</span>
+				</div>
+			</li>
+		</ul>
+		<!--选集详情-->
+		<!--简介-->
+		<p class="text-indent dn" id="txt">加油学院</p>
+		<!--简介-->
+		
+		<!--评论-->
+		<div class="commentsBox dn">
+			<ul id="commentsBox">
+				<li>
+					<div class="head">
+						<img src="img/article/c-3.png" />
+					</div>
+					<div class="comment">
+						<div class="name">加油学院<span>1小时前</span></div>
+						<p>加油学院</p>
+					</div>
+				</li>
+			</ul>
+			<div class="addComments">
+				<div class="box">
+					<input placeholder="说点什么吧..." id="commentInput" />
+					<div class="send" id="send">发送</div>				
+				</div>
+			</div>
+		</div>
+		<!--评论-->
+		
+		<!--底部-->
+		<div class="multimedia-bottom">
+			<div class="dianzan mb" id="mark">
+				<img src="img/newMultimedia/c-1.png" id="notshouchang"/>
+				<img src="img/newMultimedia/c-1-selected.png" id="haveshouchang" class="dn"/>
+				<span id="shouchangspan">收藏</span>
+			</div>
+			<div class="shouchang mb" id="like">
+				<img src="img/newMultimedia/d-1.png" id="notdianzhan"/>
+				<img src="img/newMultimedia/d-1-selected.png" id="havedianzhan" class="dn"/>
+				<span id="dianzhanspan">点赞(</span><span id="likeNum">0</span><span id="dianzhanspan1">)</span>
+			</div>
+			<div class="free-class mb" id="notbuy">
+				<span>免费课程</span>
+			</div>
+			<div class="free-class mb" id="gobuy" class="dn">
+				<span id="price">19.9</span>元
+				<span>购买</span>
+			</div>
+			<div class="free-class mb" id="hadbuy" class="dn">
+				<span>已经购买</span>
+			</div>
+		</div>
+		
+		<!--购买对话框-->
+		<div class="payAlert dn">
+			<div class="payAlertTitle">此内容为收费内容，是否购买？</div>
+			<div>
+				<span class="payLeft" id="payLeft">我知道了</span><span class="payRight" id="payRight">立即购买</span>
+			</div>
+		</div>
+		<!--底部-->
+		<form action="/9999601000" method="POST" id="buyForm">
+			<input type="hidden" name="materialClassify" id="classify">
+			<input type="hidden" name="materialId" id="materialId">
+			<input type="hidden" name="token" id="token">
+		</form>
+		
+		<div class="showAlert dn">
+			<span></span>
+		</div>
+		
+<script type="text/javascript" >
+</script>
+
+	<script type="text/javascript" src="js/newMultimedia.js" ></script>
+
+	</body>
+
+</html>

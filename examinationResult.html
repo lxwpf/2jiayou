@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<meta name="version" content="2.0.1.20180126-RELEASE">
+		<title>全国老年大学入学考试</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/jquery-1.7.2.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+		
+		<link rel="stylesheet" href="css/examinationResult.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/exam_ques.js" ></script><!--考题数据-->
+		<script type="text/javascript" src="js/examinationResult.js" ></script><!--全局变量-->
+	</head> 
+	<body>		
+		<!--背景图片-->
+		<div class="bg">
+			<!--考试成绩-->
+			<div class="cj">
+				<img class="cj-bg" id="cj_bg" src="../img/examination/get/success.png"/>
+				<span class="cj-txt" id="cj_txt">这次考试你得了100分，恭喜你通过入学考试！</span>
+				<img class="cj-msg-success dn" id="cj_msg_success" src="../img/examination/get/msg_info.png"/>
+				<img class="cj-msg-fail dn" id="cj_msg_fail" src="../img/examination/get/msg_fail.png"/>
+			</div>	
+			<!--联系方式-->
+			<div class="lx dn" id="lx_success">
+				<div class="lx-info">
+					<img class="lx-info-ico" src="../img/examination/get/ico1.png" style="width: 10px;"/>
+					<span class="lx-info-txt">输入姓名和手机号生成通知书</span>
+				</div>	
+				<div class="lx-info-input">
+					<input id="userName" name="userName" placeholder="请输入你的姓名" />
+				</div>	
+				<div class="lx-info-input">
+					<input id="userPhone" name="userPhone" placeholder="请输入你的电话" />
+				</div>		
+				<!--领取-->
+				<div class="get-btn"><img src="../img/examination/get/get.png"/></div>		
+			</div>	
+			<!--联系方式-->
+			<div class="lx dn" id="lx_fail">
+				<!-- 重新挑战 -->
+				<div class="get-again-btn"><img src="../img/examination/get/again.png"/></div>	
+				<div class="get-fail-btn"><img src="../img/examination/get/get_not.png"/></div>	
+			</div>	
+		</div>
+	
+	</body>
+
+</html>

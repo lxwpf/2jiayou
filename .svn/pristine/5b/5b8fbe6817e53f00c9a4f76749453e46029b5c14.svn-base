@@ -1,0 +1,115 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>支付</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			html,body{
+				height: 100%;
+				background: #f2f2f2;
+			}
+			.pay-container{
+				font-size: 0.4864864864864865rem;
+				color: #666666;
+				background: white;
+				padding-top: 0.3rem;
+			}
+			.pay-container .up{
+				height: 4.945945945945946rem;
+				background: white;
+				margin: 0 0.5405405405405406rem;
+				padding-top: 0.5405405405405406rem;
+			}
+			.pay-container .title{
+				font-size: 0.5405405405405406rem;
+				color: #666666;
+			}
+			.padding-lr-20{
+				padding: 0 0.5405405405405406rem;
+			}
+			.pay-container .pay-content{
+				margin-top: 0.2702702702702703rem;
+				margin-bottom: 0.16216216216216217rem;
+			}
+			.pay-container .pay-content img{
+				height: 1.5405405405405406rem;
+				width: 2.7567567567567566rem;
+				float: left;
+				margin-right: 0.2702702702702703rem;
+				margin-top: 0.13513513513513514rem;
+			}
+			.pay-container .pay-content p{
+				font-size: 0.4864864864864865rem;
+				color: #666666;
+			}
+			.pay-container .right{
+				float: right;
+			}
+			.pay-container .money{
+				height: 1.0810810810810811rem;
+				background: white;
+				line-height: 1.0810810810810811rem;
+				margin: 0 0.5405405405405406rem;
+			}
+			.pay-container .money .span-two{
+				float: right;
+			}
+			.line{
+				height: 0.2702702702702703rem;
+				background: #f2f2f2;
+			}
+			.line-one{
+				height: 0.02702702702702703rem;
+				background: #F3F3F3;
+			}
+			.price{
+				padding: 0.13513513513513514rem 0.5405405405405406rem;
+			}
+		</style>
+	</head>
+	<body>
+		<div class="pay-container">
+			<div class="title padding-lr-20">订单详情：</div>
+			<div class="line-one"></div>
+			<div class="pay-content padding-lr-20">
+				<img src="img/payPag/scan.png" />
+				<p>《普洱茶上看到那实打实的吧基本上都撒大苏打撒旦撒大苏打》</p>
+			</div>
+			<div class="line-one"></div>
+			<div class="price">
+				<span>售价：</span>
+				<div class="right">
+					共<span>10</span>集  
+					合计：<span>19</span>元
+				</div>
+			</div>
+			<div class="line"></div>
+			<div class="order-money money">
+				<span>订单余额：</span>
+				<div class="span-two"><span>10</span>元</div>
+			</div>
+			<div class="pay-money money">
+				<span>支付金额：</span>
+				<div class="span-two"><span>10</span>元</div>
+			</div>
+		</div>
+	</body>
+</html>

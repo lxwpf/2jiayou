@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>我的活动</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+
+		<link rel="stylesheet" href="css/myActivity.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/myActivity.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>	
+		<div class="recommend">
+			<ul class="recommendList" id="recommendList">
+				<!--<li>
+					<a class="passageImg" href="#">
+						<img src="img/housekeeper/c-1.png" class="pic"  />
+					</a>
+					<div class="passageTxt">
+						<a class="headings" href="#">京剧名段欣赏 周信芳、萧何月下追韩信三......</a>
+						<div class="infor">
+							<div class="read">参与人数<span>1000</span></div>
+						</div>
+					</div>
+				</li>-->
+			</ul>
+		</div>
+	</body>
+
+</html>

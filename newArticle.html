@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>文章详情</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/json2.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+
+		<link rel="stylesheet" href="css/newArticle.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/newArticle.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<div class="articleTxt">
+			<div class="title" id="title">家游学院</div>
+			<div class="titleInfor">发布时间：<span id='time'>2017-03-07</span><span id="tip">家游学院</span></div>
+			<div class="txt" id="txt">
+				家游学院
+			</div>
+		</div>	
+	<!--	
+		<div class="shareBox">
+			<ul class="clearfloat">
+				<li>
+					<div class="state" id="mark">
+						<img src="img/article/3.png" class="noget" />
+						<img src="img/article/3-2.png" class="get dn" />
+					</div>
+					<div class="show">
+						收藏 <span id="markNum">889</span>
+					</div>
+				</li>
+				<li>
+					<div class="state" id="like">
+						<img src="img/article/4.png"  class="noget" />
+						<img src="img/article/4-2.png" class="get dn" />
+					</div>
+					<div class="show">
+						点赞 <span id="likeNum">889</span>
+					</div>
+				</li>		
+				<li>
+					<div class="state" id="share">
+						<img src="img/article/5.png"  class="noget" />
+					</div>
+					<div class="show">
+						分享
+					</div>
+				</li>				
+			</ul>
+		</div>
+	-->
+		<div class="readTitle">
+			推荐阅读<img src="img/article/1.png" class="icon" />
+		</div>
+
+		<div class="recommend">
+			<ul class="recommendList" id="recommendList">
+				<li>
+					<a class="passageImg" href="#">
+						<img src="img/housekeeper/c-1.png" class="pic"  />
+					</a>
+					<div class="passageTxt">
+						<a class="headings" href="#">京剧名段欣赏 周信芳、萧何月下追韩信三......</a>
+						<div class="infor">
+							<div class="read">阅读量 <span>1000</span></div>
+							<div class="type">曲艺杂谈</div>
+						</div>
+					</div>
+				</li>
+			</ul>
+		</div>
+
+
+		<div class="banner">
+			<img src="img/article/c-2.png" id="banner" onclick="javascript:location.href='http://u.2jiayou.com/weixin/menu/1'" />
+		</div>
+		
+		<div class="commentsTitle">
+			相关评论<img src="img/article/2.png" class="icon" />
+		</div>	
+		
+		<div class="commentsBox">
+			<ul id="commentsBox">
+				<!--<li>
+					<div class="head">
+						<img src="img/article/c-3.png" />
+					</div>
+					<div class="comment">
+						<div class="name">王大爷<span>1小时前</span></div>
+						<p>我觉得这篇文章非常好，我已经分享给我的邻居了。</p>
+					</div>
+				</li>			-->
+			</ul>
+		</div>
+		
+		<div class="nouse"></div>
+		<div class="addComments">
+			<div class="box">
+				<input placeholder="说点什么吧..." id="commentInput" />
+				<div class="send" id="send">发送</div>				
+			</div>
+		</div>	
+
+		<div class="popupShare dn" id="popupShare">
+			<div class="mask"></div>
+			<div class="content">
+				<img src="img/article/7.png" class="shareTip">
+				<img src="img/article/8.png" class="shareSure" id="shareSure">
+			</div>
+		</div>
+
+		<div class="popupSuccess dn" id="popupSuccess">
+			<img src="img/article/6.png"  />
+			<div class="tip">评论成功</div>
+		</div>		
+	</body>
+
+</html>

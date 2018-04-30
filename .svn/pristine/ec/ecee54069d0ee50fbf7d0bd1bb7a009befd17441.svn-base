@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>兑换奖励</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+
+		<link rel="stylesheet" href="css/award.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/award.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<div class="remind">*为保证礼品顺利送达,请准确填写联系信息</div>
+		<div class="list">
+			<ul>
+				<li>
+					<img src="img/award/o-1.png" class="icon" />
+					<input placeholder="请填写兑奖人姓名" id="writeoffName" class="input"/>
+				</li>
+				<li>
+					<img src="img/award/o-2.png" class="icon" />
+					<input placeholder="请填写兑奖人手机号" id="writeoffPhone" class="input"/>
+				</li>
+				<li>
+					<img src="img/award/o-3.png" class="icon" />
+					<input placeholder="请填写兑奖人地址" id="writeoffAddress" class="input"/>
+				</li>
+				<li>
+					<img src="img/award/o-4.png" class="icon" />
+					<input placeholder="请填写14位兑奖码" id="ticketNumber" class="input" onfocus="this.style.imeMode='disabled'"/>
+				</li>
+			</ul>
+		</div>
+		<div class="btn" id="checkBtn">兑换奖励</div>
+		
+		<!--兑奖弹窗-->
+		<div class="showAlert dn">
+			<span></span>
+		</div>
+	</body>
+</html>

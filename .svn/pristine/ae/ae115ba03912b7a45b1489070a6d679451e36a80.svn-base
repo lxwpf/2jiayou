@@ -1,0 +1,80 @@
+@charset "utf-8";
+html,body{
+	background-color:#f0eff5;
+}
+.recommend{
+	width:100%;
+}
+.recommend .recommendList{
+	width:100%;
+}
+.recommend .recommendList li{
+	margin-bottom:0.13333333333333333rem;
+    height: 2.8189189189189188rem;
+	padding:0 0.26666666666666666rem;
+	background-color:#fff;
+}
+.recommend .recommendList li .passageImg{
+	margin:0.4rem 0 0 0.26666666666666666rem;
+	position:relative;
+	float:left;
+	height: 1.972972972972973rem;
+    width: 3.3866666666666667rem;
+}
+.recommend .recommendList li .passageImg .pic{
+	display:block;
+	height: 1.972972972972973rem;
+    width: 3.3866666666666667rem;	
+}
+.recommend .recommendList li .passageImg .video{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-0.5866666666666667rem;
+	margin-left:-0.5866666666666667rem;
+	width:1.1733333333333333rem;
+	height:1.1733333333333333rem;
+}
+.recommend .recommendList li .passageImg .music{
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-top:-0.5866666666666667rem;
+	margin-left:-0.5866666666666667rem;
+	width:1.1733333333333333rem;
+	height:1.1733333333333333rem;
+}
+.recommend .recommendList li .passageTxt{
+	position:relative;
+	margin:0.4rem 0.26666666666666666rem 0 0;
+	float:right;
+	width:4.986666666666666rem;
+	height: 2.081081081081081rem;
+}
+.recommend .recommendList li .passageTxt .headings{
+	font-size:0.4864864864864865rem;
+	letter-spacing: 0.005675675675675676rem;
+	color:#666;
+	line-height:0.4799999999999999rem;
+}
+.recommend .recommendList li .passageTxt .infor{
+	position:absolute;
+	bottom:0;
+	left:0;
+	width:4.986666666666666rem;
+	height:0.5333333333333333rem;		
+}
+.recommend .recommendList li .passageTxt .infor .read{
+	float:left;
+	font-size:0.40540540540540543rem;
+	/*color:#666;*/
+	letter-spacing: 0.004864864864864865rem;
+	line-height:0.5333333333333333rem;
+}
+.recommend .recommendList li .passageTxt .infor .type{
+	float:right;
+	font-size:0.40540540540540543rem;
+	color:#FF8C00;
+	letter-spacing: 0.004864864864864865rem;
+	line-height:0.5333333333333333rem;
+}	

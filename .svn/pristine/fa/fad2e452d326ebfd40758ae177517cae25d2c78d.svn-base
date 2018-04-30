@@ -1,0 +1,46 @@
+@charset "utf-8";
+.dn{
+	display:none;
+}
+.db{
+	display:block;
+}
+/*清除浮动*/
+.clearfloat:after {
+	content: "020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfloat {
+	zoom: 1;
+}
+
+
+/*底部导航条*/
+.footer{
+	position:fixed;
+	bottom:0;
+	left:0;
+	width:10rem;
+	height:1.52rem;
+	background-color:#fff;
+	border-top:0.013333333333333334rem solid #e6e6e6;
+}
+.footer ul li{
+	float:left;
+	width:3.3333333333333335rem;
+}
+.footer ul li a{
+	display:block;
+	margin:0.37333333333333335rem auto;
+	width:2.2rem;
+	height:0.7466666666666667rem;	
+}
+.footer ul li img{
+	display:block;
+	width:2.2rem;
+	height:0.7466666666666667rem;	
+}
+/*底部导航条*/

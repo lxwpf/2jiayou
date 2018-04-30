@@ -1,0 +1,109 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	background: #f0eff5;
+}
+
+.bg{
+	background: url(../img/examination/get/BG_res.png) no-repeat;
+	background-size: 100% 100%;
+	height: 100%;
+	width: 100%;
+}
+.cj{
+}
+.cj .cj-bg{
+    width: 78%;
+    left: 11%;
+    position: absolute;
+    top: 3%;
+}
+.cj .cj-txt{
+    position: absolute;
+    width: 62%;
+    top: 13.5%;
+    left: 20%;
+    font-size: 52px;
+    color: #FF8C00;
+}
+.cj .cj-msg-success{
+    position: absolute;
+    width: 62%;
+    left: 19%;
+    top: 43%;
+    z-index: 9;
+}
+.cj .cj-msg-fail{
+    position: absolute;
+    width: 54.7%;
+    left: 22.7%;
+    top: 43.7%;
+    z-index: 9;
+}
+
+.lx{
+	position: absolute;
+	top: 65%;
+    height: 35%;
+    width: 100%;
+}
+.lx-info{
+	position: absolute;
+	left: 17%;
+    width: 68%;
+    height: 21%;
+}
+.lx-info .lx-info-txt{
+	font-size: 44px;
+	color: #BCBCBC;
+}
+.lx-info-input{
+	position: relative;
+	left: 17%;
+    width: 68%;
+    height: 17%;
+    top: 13%;
+    margin-bottom: 5%;
+}
+.lx-info-input input{
+	background: #FFFFFF;
+	border: 1px solid #00B6FF;
+	box-shadow: inset 0 1px 3px 0 rgba(0,0,0,0.50);
+	border-radius: 10px;
+	height: 100%;
+    width: 100%;
+	font-size: 44px;
+	color: #999999;
+	text-align: center;
+}
+
+.get-again-btn{
+	position: absolute;
+	bottom: 30%;
+	left: 17%;
+    width: 68%;
+    height: 21%;
+}
+.get-again-btn img{
+	width: 100%;
+}
+.get-btn{
+	position: absolute;
+	bottom: 8%;
+	left: 17%;
+    width: 68%;
+    height: 21%;
+}
+.get-btn img{
+	width: 100%;
+}
+.get-fail-btn{
+	position: absolute;
+	bottom: 8%;
+	left: 17%;
+    width: 68%;
+    height: 21%;
+}
+.get-fail-btn img{
+	width: 100%;
+}

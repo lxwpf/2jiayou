@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院"
+		<meta name="version" content="1.0.1 build 2017.12.05">>
+		<title>Loading</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局常量-->
+		
+		<link rel="stylesheet" href="css/index.css" /><!--根据页面需要引入自己当前页css-->
+	</head> 
+	<body>		
+	<script type="text/javascript">
+
+		//判断是否新老用户并获取token
+		function judgeUser() {
+			if(getQueryString('token')){
+				window.localStorage.setItem('token',getQueryString('token'));			
+			}else{
+				location.href = noTokenUrl;
+			}
+			if(getQueryString('flag') == '0'){ //flag 0  老用户
+				location.href = jumpHousekeeper;
+			}else{
+				location.href = jumpGuiding;
+			}	
+		}
+		function getQueryString(name) {
+			var url = location.search; //获取url中"?"符后的字串 
+			alert(url);
+			var theRequest = new Object();
+			if(url.indexOf("?") != -1) {
+				var str = url.substr(1);
+				strs = str.split("&");
+				for(var i = 0; i < strs.length; i++) {
+					theRequest[strs[i].split("=")[0]] = unescape(strs[i].split("=")[1]);
+				}
+			}
+			return theRequest[name];
+		}
+		judgeUser();
+
+	</script>
+	</body>
+
+</html>

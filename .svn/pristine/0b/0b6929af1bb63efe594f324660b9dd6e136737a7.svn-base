@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>家游学院</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<!-- <script src="http://g.tbcdn.cn/mtb/lib-flexible/0.3.4/??flexible_css.js,flexible.js"></script> -->
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!-- flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>
+
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+		
+		<script src="http://int.dpool.sina.com.cn/iplookup/iplookup.php?format=js"></script><!--获取地理位置-->
+
+		<link rel="stylesheet" href="css/housekeeper.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/housekeeper.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<div class="todayWeather clearfloat">
+			<div class="todayLeft">
+				<div class="year">
+					<strong id="year">2017-10</strong><span class="week" id="week">周一</span><span class="lunar" id="lunar">农历9月初四</span>
+				</div>
+				<div class="day" id="day">
+					23
+				</div>
+				<div class="good"><span>宜：</span><strong id="good">祭祀 纳财 作灶</strong></div>
+				<div class="bad"><span>忌：</span><strong id="bad">动土 破土 开市</strong></div>
+			</div>
+			<div class="todayRight">
+				<div class="place">
+					<strong id="city">哪里</strong><span></span>
+				</div>
+				<div class="degree">
+					<strong id="degree">1</strong><span>℃</span>
+				</div>
+				<div class="cloud clearfloat">
+					<img src="img/housekeeper/2.png" class="cloudImg" id="cloudImg">
+					<div class="state" id="state">多云</div>
+				</div>
+				<div class="wind" id="wind">东北风3~4级</div>				
+			</div>
+		</div>
+		
+		<div class="recommend" id="floatBox">
+			<div class="recommendTitle">
+				<span class="sp1"></span><span class="today-tj">今日推荐</span>
+				<span class="changeInfor dn" id="changeInfor">换一批</span>
+			</div>
+			<ul class="recommendList" id="recommendList">
+				<!--<li>
+					<a class="passageImg" href="article.html">
+						<img src="img/housekeeper/c-1.png" class="pic"  />
+						<img src="img/common/4.png" class="video dn" />
+						<img src="img/common/5.png" class="music dn" />
+					</a>
+					<div class="passageTxt">
+						<a class="headings" href="article.html">京剧名段欣赏 周信芳、萧何月下追韩信三......</a>
+						<div class="infor">
+							<div class="read">阅读量 <span>1000</span></div>
+							<a class="type" href="articleList.html">曲艺杂谈</a>
+						</div>
+					</div>
+				</li>-->
+			</ul>			
+		</div>
+		<div class="footer">
+			<ul class="clearfloat">
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/1-2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="schoolPage.html">
+						<img src="img/common/2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="person.html">
+						<img src="img/common/3.png" />
+					</a>
+				</li>				
+			</ul>
+		</div>
+	</body>
+
+</html>

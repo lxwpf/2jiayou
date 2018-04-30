@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<meta name="version" content="2.0.1.20180126-RELEASE">
+		<title>全国老年大学入学考试</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/jquery-1.7.2.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/json2.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+		
+		<link rel="stylesheet" href="css/examinationProcess.css" /><!--根据页面需要引入自己当前页css-->	
+		<script type="text/javascript" src="js/exam_ques.js" ></script><!--考题数据-->
+		<script type="text/javascript" src="js/examinationProcess.js" ></script><!--考题数据-->	
+	</head> 
+	<body>		
+		<!--背景图片-->
+		<div class="bg">
+			<div class="qus-area">
+				<div class="now-qus">你已答对<span class="orange-color" id="qus_success">0</span>道题目</div>
+				<div class="left-qus"><span id="qus_msg">现在正在做第1题，剩余9道题</span></div>	
+				<div class="process">
+					<img class="process-val" src="" id="qus_process"/>
+				</div>	
+				<div class="title"><span id="qus_title">第一题</span></div>	
+				<div class="ques"><span id="qus_describe">加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院加油学院</span></div>
+			</div>
+			
+			<div class="item-area">
+				<!--文字-->
+				<div id="item_text" class="item-txt-area dn">
+					<div class="item-txt" onclick="selectOption('0')">
+						<img class="txt-bg" src="../img/examination/item/txt_bk.png"/>
+						<img class="txt-no" id="option_no0" />
+						<img class="txt-res dn" id="option_res_right0" src="../img/examination/item/txt_ans_right.png"/>
+						<img class="txt-res dn" id="option_res_error0" src="../img/examination/item/txt_ans_error.png"/>
+						<div class="txt-val"><span id="option_val0">加油学院</span></div>
+					</div>
+					<div class="item-txt" onclick="selectOption('1')">
+						<img class="txt-bg" src="../img/examination/item/txt_bk.png"/>
+						<img class="txt-no" id="option_no1" />	
+						<img class="txt-res dn" id="option_res_right1" src="../img/examination/item/txt_ans_right.png"/>
+						<img class="txt-res dn" id="option_res_error1" src="../img/examination/item/txt_ans_error.png"/>
+						<div class="txt-val"><span id="option_val1">加油学院</span></div>
+					</div>
+					<div class="item-txt" onclick="selectOption('2')">
+						<img class="txt-bg" src="../img/examination/item/txt_bk.png"/>
+						<img class="txt-no" id="option_no2" />	
+						<img class="txt-res dn" id="option_res_right2" src="../img/examination/item/txt_ans_right.png"/>
+						<img class="txt-res dn" id="option_res_error2" src="../img/examination/item/txt_ans_error.png"/>		
+						<div class="txt-val"><span id="option_val2">加油学院</span></div>
+					</div>
+					<div class="item-txt" onclick="selectOption('3')">
+						<img class="txt-bg" src="../img/examination/item/txt_bk.png"/>
+						<img class="txt-no" id="option_no3" />	
+						<img class="txt-res dn" id="option_res_right3" src="../img/examination/item/txt_ans_right.png"/>
+						<img class="txt-res dn" id="option_res_error3" src="../img/examination/item/txt_ans_error.png"/>
+						<div class="txt-val"><span id="option_val3">加油学院</span></div>
+					</div>
+				</div>
+				<!--图片-->
+				<div id="item_pic" class="item-pic-area ">
+					<div class="item-pic" onclick="selectOption('0')">
+						<img class="pic-bg" src="../img/examination/item/pic_bk.png"/>
+						<img class="pic-val" id="pic_val0" />	
+						<div class="pic-meno dn" id="pic_meno_div0"><span id="pic_meno0"></span></div>
+						<img class="pic-no" id="pic_no0" />	
+						<img class="pic-res dn" id="pic_res_right0" src="../img/examination/item/pic_ans_right.png"/>
+						<img class="pic-res dn" id="pic_res_error0" src="../img/examination/item/pic_ans_error.png"/>		
+					</div>
+					<div class="item-pic" onclick="selectOption('1')">
+						<img class="pic-bg" src="../img/examination/item/pic_bk.png"/>
+						<img class="pic-val" id="pic_val1" />	
+						<div class="pic-meno dn" id="pic_meno_div1"><span id="pic_meno1"></span></div>
+						<img class="pic-no" id="pic_no1" />	
+						<img class="pic-res dn" id="pic_res_right1" src="../img/examination/item/pic_ans_right.png"/>
+						<img class="pic-res dn" id="pic_res_error1" src="../img/examination/item/pic_ans_error.png"/>
+					</div>					
+					<div class="item-pic" onclick="selectOption('2')">
+						<img class="pic-bg" src="../img/examination/item/pic_bk.png"/>
+						<img class="pic-val" id="pic_val2" />		
+						<div class="pic-meno dn" id="pic_meno_div2"><span id="pic_meno2"></span></div>
+						<img class="pic-no" id="pic_no2" />	
+						<img class="pic-res dn" id="pic_res_right2" src="../img/examination/item/pic_ans_right.png"/>
+						<img class="pic-res dn" id="pic_res_error2" src="../img/examination/item/pic_ans_error.png"/>
+					</div>
+					<div class="item-pic" onclick="selectOption('3')">
+						<img class="pic-bg" src="../img/examination/item/pic_bk.png"/>
+						<img class="pic-val" id="pic_val3" />	
+						<div class="pic-meno dn" id="pic_meno_div3"><span id="pic_meno3"></span></div>
+						<img class="pic-no" id="pic_no3" />	
+						<img class="pic-res dn" id="pic_res_right3" src="../img/examination/item/pic_ans_right.png"/>
+						<img class="pic-res dn" id="pic_res_error3" src="../img/examination/item/pic_ans_error.png"/>	
+					</div>
+				</div>
+			</div>
+		</div>
+	
+	</body>
+
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>填写信息</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<link rel="stylesheet" href="css/userInfomation.css" />
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		<script type="text/javascript" src="js/common/methods.js" ></script>
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+		<script type="text/javascript" src="js/userInfomation.js" ></script>
+		
+	</head>
+	<body>
+		<div class="head-hint">*为保证顺利参加活动，请准确填写联系信息</div>
+		<div class="middle-area">
+			<div class="item">
+				<span class="icon-1"></span>
+				<input type="text" class="real-name" placeholder="请填写您的真实姓名" id="realName"/>
+				<span class="text-right">必填</span>
+			</div>
+			<div class="item">
+				<span class="icon-2"></span>
+				<input type="text" class="real-name" placeholder="请填写您的手机号" id="phoneNumber"/>
+				<span class="text-right">必填</span>
+			</div>
+			<div class="item">
+				<span class="icon-3"></span>
+				<input type="text" class="real-name" placeholder="请填写您所在的地区" id="phoneNumber"/>
+			</div>
+			<div class="item">
+				<span class="icon-4"></span>
+				<input type="text" class="real-name" placeholder="请填写您的详细地址" id="details-area"/>
+			</div>
+			<textarea class="textarea" placeholder="点击写下备注：" onkeyup="wordStatic1(this);" maxlength="200"  rows="3"></textarea>
+		</div>
+		<div class="submit-btn">提交信息</div>
+		
+		<div class="hintBox dn" id="chint"></div>
+	</body>
+</html>

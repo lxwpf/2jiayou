@@ -1,0 +1,61 @@
+html,body{
+	height: 100%;
+	background: #F0F0F0;
+}
+.my-card{
+	height: 7.8%;
+	line-height: 1.4054054054054055rem;
+	margin-top: 3%;
+	background: white;
+	overflow: hidden;
+}
+.my-card span{
+	font-size: 0.5945945945945946rem;
+	margin-left: 2.7%;
+}
+/*我的会员卡*/
+.ul-myCard li{
+	height: 8.7%;
+	line-height: 1.945945945945946rem;
+	margin-top: 1%;
+	background: white;
+	font-size: 0.5405405405405406rem;
+}
+.li-img{
+	height: 1.2027027027027026rem;
+	width: 1.2027027027027026rem;
+	margin-left: 3.2%;
+	vertical-align: -0.32432432432432434rem;
+}
+.ul-myCard span{
+	margin-left: 5.9%;
+}
+/*我的优惠卷*/
+.ul-coupon li{
+	height: 8.7%;
+	line-height: 1.945945945945946rem;
+	margin-top: 1%;
+	background: white;
+	font-size: 0.5405405405405406rem;
+}
+.ul-coupon span{
+	margin-left: 5.9%;
+}
+/*我的兑换码*/
+.ul-code li{
+	height: 8.7%;
+	line-height: 1.945945945945946rem;
+	margin-top: 1%;
+	background: white;
+	font-size: 0.5405405405405406rem;
+}
+.ul-code span{
+	margin-left: 5.9%;
+}
+.right-down{
+	float: right;
+	height: 0.40540540540540543rem;
+	width: 0.6756756756756757rem;
+	margin-right: 2.7%;
+	margin-top: 0.40540540540540543rem;
+}

@@ -1,0 +1,112 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>学院</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<link rel="stylesheet" href="css/activity.css" />
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+		<script type="text/javascript" src="js/common/methods.js" ></script>
+		
+		<script type="text/javascript" src="js/activity.js" ></script>
+		
+		<!--Token检查-->
+		<script type="text/javascript" src="js/widget/token/token.js" ></script>	
+		
+	</head>
+	<body>
+		<input type="date" class="data-hidden dn" onfocus="checkData()"/>
+		<!--<div class="activity-title">
+			<span class="choose-type">分类</span>
+			<span class="data">日期</span>
+			<span class="price">价格</span>
+		</div>-->
+		
+		<ul id="yspList">
+			<!--<li>
+				<div class="middle-a">
+					<span class="activity-icon"><label class="text">旅游</label></span>
+					<p>普洱茶啥叫时间萨达萨达是答不上</p>
+				</div>
+				<a href="newMultimedia.html">
+					<div class="video">
+						<img src="img/college/c-4.png" class="bg"/>
+						<div class="video-bottom">
+							<span class="b-left">杭州下城区</span>
+							<span class="b-right">2018年2月26日至3月12日</span>
+						</div>
+					</div>
+				</a>
+			
+				<div class="video-introduce">
+					<span class="money">10</span>元
+					共<span>24</span>人参加
+					<span class="right-btn">已报名</span>
+				</div>
+			</li>-->
+		</ul>
+		
+		<!--点击显示部分-->
+		<div class="type-page dn">
+			<div class="type-head clear">
+				<ul>
+					<li><span class="select-li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+					<li><span class="li-span">全部</span></li>
+				</ul>
+			</div>
+		</div>
+		
+		<!--<div class="bottom-hide"></div>-->
+		<div class="pd"></div>
+		<div class="footer">
+			<ul class="clearfloat">
+				<li>
+					<a href="housekeeper.html">
+						<img src="img/common/1.png" />
+					</a>
+				</li>
+				<li>
+					<a href="schoolPage.html">
+						<img src="img/common/2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="activity.html">
+						<img src="img/common/6-2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="person.html">
+						<img src="img/common/3.png" />
+					</a>
+				</li>
+			</ul>
+		</div>
+		
+		<script>
+			$(".choose-type").on("click",function(){
+				$(".type-page").toggle();
+			});
+			$(".data").on("click",function(){
+				$(".data-hidden").focus(function(){
+					alert('111');
+				});
+			});
+		</script>
+	</body>
+</html>

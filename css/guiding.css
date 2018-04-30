@@ -1,0 +1,74 @@
+@charset "utf-8";
+.title{
+	margin-top: 1.0666666666666667rem;
+	text-align: center;
+	position: relative;
+	padding-bottom: 0.26666666666666666rem;
+	border-bottom: 0.013333333333333334rem solid #AAAAAA;
+}
+.title .text1{
+	font-size: 0.64rem;
+	color: #333333;
+}
+.title .jump{
+	position: absolute;
+	right: 0.6666666666666666rem;				
+	color: #aaaaaa;
+	font-size: 0.48rem;
+	line-height: 0.7866666666666666rem;
+}
+.wrapper{
+	margin: 0 0.64rem;
+}
+.wrapper div{
+	font-size: 0.4rem;
+	color: #333333;
+}
+.wrapper span{
+	display: inline-block;
+	width: 29.2%;
+	height: 1.3333333333333333rem;
+	border-radius: 0.6666666666666666rem;
+	text-align: center;
+	line-height: 1.3333333333333333rem;
+	margin: 0.26666666666666666rem 0.26666666666666666rem 0 0;
+}
+.wrapper .column{
+	margin-top: 0.6666666666666666rem;
+}
+.wrapper .sex span{
+	border: 0.013333333333333334rem solid #ff8c00;
+}
+.wrapper .sex .selected{
+	background: #ff8c00;
+	color: white;
+}
+.wrapper .age span{
+	border: 0.013333333333333334rem solid #3bc532;
+}
+.wrapper .age .selected{
+	background: #3bc532;
+	color: white;
+}
+.wrapper .xueli span{
+	border: 0.013333333333333334rem solid #08a2eb;
+}
+.wrapper .xueli .selected{
+	background: #08a2eb;
+	color: white;
+}
+
+.btn{
+	height: 1.2rem;
+	display: block;
+	background: #ffb62a;
+	border-radius: 0.13333333333333333rem;
+	margin: 0 0.6rem;
+	font-size: 0.4rem;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.13333333333333333rem;
+	line-height: 1.2rem;
+	/*margin-top: 0.5333333333333333rem;*/
+	margin-top:1rem;
+}

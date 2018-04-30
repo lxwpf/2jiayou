@@ -1,0 +1,169 @@
+$(function(){
+	//token
+	var reallyToken = window.localStorage.getItem('token');
+	var shareToken = getQueryString('token');
+	if(typeof(shareToken) != "undefined" && shareToken != ''){
+		window.localStorage.setItem('token',shareToken);
+		
+		reallyToken = shareToken;
+	}
+	
+	//获取分类列表
+	function getTypeList(){
+		$.ajax({
+			type:"post",
+			url: ajaxUrl+"/10501020",
+			data: {
+				token: reallyToken,
+				jobId : getTimeMs(),
+			},
+			success:function(data){
+				console.log(data);
+				var arr = data.data;
+				if(arr.length>0){
+					var dom = $(".type-ul");
+					var str = '';
+					for (var i=0;i<arr.length;i++) {
+						/*<li><span class="li-span">全部</span></li>*/
+						str = str +
+						'<li><span class="li-span">'+arr[i].name+'<span></li>';
+					}
+					dom.append(str);
+				}
+			},
+			error:function(error){
+				console.log(data);
+			}
+		});
+	}
+	getTypeList();
+	
+	//分类列表的点击事件
+	$(".li-span").on("click",function(){
+		$(".li-span").removeClass("li-span");
+		$(".li-span").addClass("select-li-span");
+	});
+	
+	//保存用户素材信息
+	function saveUserInfo(){
+		var title = $("#inputTitle").val();
+		var meno = $("#textareaText").val();
+		var detail1 = $("#detail1").val();
+		var detail2 = $("#detail2").val();
+		var imgUrl1 = "";
+		var imgUrl2 = "";
+		console.log("title="+title+"   meno="+meno+"   detail1="+detail1+"   detail2="+detail2+ "   imgUrl1="+imgUrl1+ "    imgUrl2="+imgUrl2);
+		$.ajax({
+			type:"post",
+			url: ajaxUrl+"/1020201803",
+			data: {
+				token: reallyToken,
+				jobId : getTimeMs(),
+				type: '1',
+				urls: "baidu"+','+"youku",
+				descriptions: "111"+','+"2222",
+				title: "sadddddddddqweqw",
+				meno1: "wqeqwe"
+			},
+			success:function(data){
+				console.log("我的活动");
+				console.log(data);
+				showList(data.data);
+			},
+			error:function(error){
+				console.log(data);
+			}
+		});
+	}
+	
+	$("#img1").on("click", function() {
+		var reallyToken = window.localStorage.getItem('token');
+		var shareToken = getQueryString('token');
+		if(typeof(shareToken) != "undefined" && shareToken != ''){
+			window.localStorage.setItem('token',shareToken);
+			reallyToken = shareToken;
+		}
+		console.log("upload1");
+		$("#FileUpload").click();
+		
+		$("#FileUpload").change(function(){
+			//本地上传文件对象
+			var fileObj = document.getElementById("FileUpload").files[0]; // js 获取文件对象
+			if(typeof(fileObj) == "undefined" || fileObj.size <= 0) {
+				alert("请选择图片");
+				return;
+			}
+			
+			var formFile = new FormData();
+			formFile.append("token",reallyToken);
+	        formFile.append("isPicture", "T");   
+	        formFile.append("file", fileObj); //加入文件对象
+			$.ajax({
+				type: "Post",
+				url: ajaxUrl + "/1020201801",
+				data: formFile,
+				dataType: "json",
+				contentType:false, //必须false才会避开jQuery对 formdata 的默认处理 , XMLHttpRequest会对 formdata 进行正确的处理
+	        	processData: false, //必须false才会自动加上正确的Content-Type 
+				success: function(result) {
+					var uploadPic = result.message;
+					console.log(result);
+					$("#img1").attr("src",uploadPic);
+					$("#details1").val(uploadPic);
+				},
+				error:function(data){
+					console.log(data);
+				}
+			})
+		});
+	});
+	
+	$("#img2").on("click", function() {
+		console.log("upload2");
+		var reallyToken = window.localStorage.getItem('token');
+		var shareToken = getQueryString('token');
+		if(typeof(shareToken) != "undefined" && shareToken != ''){
+			window.localStorage.setItem('token',shareToken);
+			reallyToken = shareToken;
+		}
+		
+		$("#FileUpload2").click();
+		
+		$("#FileUpload2").change(function(){
+			//本地上传文件对象
+			var fileObj = document.getElementById("FileUpload2").files[0]; // js 获取文件对象
+			if(typeof(fileObj) == "undefined" || fileObj.size <= 0) {
+				alert("请选择图片");
+				return;
+			}
+			
+			var formFile = new FormData();
+			formFile.append("token",reallyToken);
+	        formFile.append("isPicture", "T");   
+	        formFile.append("file", fileObj); //加入文件对象
+			
+			$.ajax({
+				type: "Post",
+				url: ajaxUrl + "/1020201801",
+				data: formFile,
+				dataType: "json",
+				contentType:false, //必须false才会避开jQuery对 formdata 的默认处理 , XMLHttpRequest会对 formdata 进行正确的处理
+	        	processData: false, //必须false才会自动加上正确的Content-Type 
+				success: function(result) {
+					var uploadPic = result.message;
+					console.log(result);
+					$("#img2").attr("src",uploadPic);
+					$("#details2").val(uploadPic);
+				},
+				error:function(data){
+					console.log(data);
+				}
+			})
+		});
+	});
+	
+	$(".btn-submit").on("click",function(){
+		saveUserInfo();
+	});
+	
+});

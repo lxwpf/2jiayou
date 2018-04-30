@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>发布素材</title>		
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		
+		<link rel="stylesheet" href="css/myCard.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/myCard.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<div class="my-card">
+			<span>我的会员卡</span>
+			<img src="img/myCard/1.png" class="right-down"/>
+		</div>
+		<ul class="ul-myCard" id="ul-myCard">
+		</ul>
+		
+		<div class="my-card">
+			<span>我的优惠卷</span>
+			<img src="img/myCard/1.png" class="right-down" />
+		</div>
+		<ul class="ul-coupon" id="ul-coupon">
+		</ul>
+		
+		<div class="my-card">
+			<span>我的兑换码</span>
+			<img src="img/myCard/1.png" class="right-down" />
+		</div>
+		<ul class="ul-code" id="ul-code">
+		</ul>
+	</body>
+</html>

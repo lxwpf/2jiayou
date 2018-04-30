@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>编辑资料</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<link rel="stylesheet" href="js/widget/mdater/zepto.mdater.css" />
+		
+		<script type="text/javascript" src="js/widget/mdater/zepto.js" ></script>
+		<script type="text/javascript" src="js/widget/mdater/zepto.mdater.js" ></script>
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		
+		<link rel="stylesheet" href="css/editInformation.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/editInformation.js" ></script><!--根据页面需要引入自己当前页js-->
+		
+	</head>
+	<body>
+		<div class="wrapper">
+			<div class="editWrapper">
+				<!-- 编辑头像 -->
+				<div class="editIconWrapper">
+					<span class="textSize18 textColor3">头像</span>
+					<div class="editIcon">
+						<img src="img/editInformation/c-1.png" class="editUserIcon" id="titleIcon"/>
+						<img src="img/person/2.png" class="intoEdit" />
+					</div>
+				</div>
+				<!-- 编辑头像 -->
+				<!-- 昵称 -->
+				<div class="editContent">
+					<span class="textSize18 textColor3">昵称</span>
+					<img src="img/person/2.png" class="into"/>
+					<input type="text" class="nickNameInput" placeholder="请输入昵称" id="nickName"/>
+				</div>
+				<!-- 昵称 -->
+				<!-- 性别 -->
+				<div class="editContent">
+					<span class="textSize18 textColor3">性别</span>
+					<img src="img/person/2.png" class="into"/>
+					<select class="nickNameInput" id="sex" style="direction: rtl;">
+						<option value="1">男</option>
+						<option value="2">女</option>
+						<option value="0">保密</option>
+					</select>
+				</div>
+				<!-- 性别 -->
+				<!-- 出生年月 -->
+				<div class="editContent">
+					<span class="textSize18 textColor3">出生年月</span>
+					<img src="img/person/2.png" class="into"/>
+					<input type="date" class="nickNameInput" id="birthday" placeholder="请选择" />
+				</div>
+				<!-- 出生年月 -->
+			</div>
+		</div>
+		<span class="saveBtn" id="saveBtn">保存</span>
+	</body>
+</html>

@@ -1,0 +1,109 @@
+@charset "utf-8";
+
+.swiper-container{
+	margin-top:0px;
+  width:100%;
+  height:4.8rem;
+}
+.swiper-container .swiper-slide{
+	display:block;
+	width:10rem;
+	height:4.666666666666667rem;
+}	
+.swiper-container .swiper-slide img{
+	display:block;
+	width:10rem;
+	height:4.666666666666667rem;
+}  
+
+
+
+.allBox{
+	width:100%;
+}	
+.allBox .list{
+	padding:0.4rem;
+}
+.allBox .list li{
+	margin:0.3466666666666667rem;
+	float:left;
+	width:1.6rem;
+}
+.allBox .list li img{
+	margin:0 auto;
+	display:block;
+	width:1.6rem;
+	height:1.6rem;
+	border-radius:0.8rem;
+}
+.allBox .list li h5{
+	font-size:0.4rem;
+	color:#333;
+	text-align:center;
+}
+
+
+
+.recommend{
+	margin-top:0.26666666666666666rem;
+	width:100%;
+}
+.recommend .recommendTitle{
+	margin-left:0.4rem;
+	position:relative;
+	width:2.2133333333333334rem;
+	height:0.5333333333333333rem;
+	line-height:0.5333333333333333rem;
+	font-size:0.4rem;
+	color:#333;
+	text-align:center;
+}
+.recommend .recommendTitle span{
+	position:absolute;
+	top:0.06666666666666667rem;
+	left:0px;
+	width:0.16rem;
+	height:0.4rem;
+	background-color:#ff8c00;
+}
+.recommend .recommendList{
+	margin:0 auto;
+	margin-top:0.26666666666666666rem;
+	width:9.2rem;
+}
+.recommend .recommendList li{
+	float:left;
+	margin:0.13333333333333333rem 0.09333333333333334rem;
+	width:4.4rem;
+}
+.recommend .recommendList li img{
+	display:block;
+	width:4.4rem;
+	height:2.1333333333333333rem;	
+}
+.recommend .recommendList li h5{
+	color:#333;
+	font-size:0.48rem;
+	text-align:center;
+}
+
+.recommend .recommendList2{
+	margin:0 auto;
+	margin-top:0.26666666666666666rem;
+	width:9.2rem;
+}
+.recommend .recommendList2 li{
+	margin-bottom:0.26666666666666666rem;
+	width:9.2rem;
+	height:3.066666666666667rem;
+}
+.recommend .recommendList2 li img{
+	display:block;
+	width:9.2rem;
+	height:3.066666666666667rem;
+}
+
+.nouse{
+	width:0.02666666666666667rem;
+	height:1.52rem;
+}

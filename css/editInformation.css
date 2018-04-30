@@ -1,0 +1,112 @@
+@charset "utf-8";
+html,body{
+	height: 100%;
+	background: #f0eff5;
+}
+.wrapper{
+	background: white;
+}
+.editWrapper{
+	margin: 0 0.1168736303871439rem;
+}
+/*编辑头像*/
+.editWrapper .textSize36{
+	font-size: 0.26296566837107377rem;
+}
+.editWrapper .textSize18{
+	font-size: 0.4864864864864865rem;
+}
+.editWrapper .textSize30{
+	font-size: 0.1168736303871439rem;
+}
+.editWrapper .textColor3{
+	color: #333333;
+}
+.editWrapper .textColor8{
+	color: #888888;
+}
+.editWrapper .editIconWrapper{
+	padding: 0.20647674701728755rem 0;
+	position: relative;
+	border-bottom:  0.014609203798392988rem solid #F3F3F3;
+	height: 1.5rem;
+	line-height: 1.5rem;
+}
+.editWrapper .editIconWrapper span{
+	margin-left: 0.5405405405405406rem;
+}
+.editWrapper .editIcon{
+	position: absolute;
+	right: 0;
+	top: 0.07012417823228634rem;
+	margin-right: 0.5405405405405406rem;
+}
+.editWrapper .editIcon .editUserIcon{
+	height: 1.4864864864864864rem;
+	width: 1.4864864864864864rem;
+	border-radius: 0.2727051375700025rem;
+	vertical-align: -0.755rem;
+}
+.editWrapper .editIcon .intoEdit{
+    height: 0.4486486486486487rem;
+    width: 0.4486486486486487rem;
+	vertical-align: -0.28rem;
+	margin-left: 0.15583150718285851rem;
+}
+/*编辑头像*/
+/*编辑*/
+.editContent{
+	height: 1.5rem;
+	line-height: 0.3895787679571463rem;
+	border-bottom: 0.014609203798392988rem solid #F3F3F3;
+	background: white;
+	padding: 0.2702702702702703rem 0;
+}
+.editContent span{
+	display: inline-block;
+	height: 0.6720233747260774rem;
+	line-height: 1.32023rem;
+	margin-left: 0.5405405405405406rem;
+}
+.editContent .nickNameInput{
+	float: right;
+	height: 0.6259313367421475rem;
+	border: none;
+	margin-top: 0.37395rem;
+	font-size: 0.4864864864864865rem;
+	text-align: right;
+	margin-right: 0.15583150718285851rem;
+	appearance: none;
+	-moz-appearance:none;
+	-webkit-appearance:none;
+}
+.editContent input::-webkit-input-placeholder{
+	font-size: 0.4864864864864865rem;
+	// line-height: 0.19478938397857315rem;
+	font-size: 0.50129rem;
+	height: 1.5rem;
+	text-align: right;
+	margin-top: 0.5rem;
+}
+.editContent .into{
+	float: right;
+	margin-top: 0.46rem;
+    height: 0.4486486486486487rem;
+    width: 0.4486486486486487rem;
+    margin-right: 0.5405405405405406rem;
+}
+/*编辑*/
+/*保存*/
+.saveBtn{
+	height: 1.3243243243243243rem;
+	width: 9.054054054054054rem;
+	display: block;
+	background: #E68124;
+	border-radius: 0.14609203798392986rem;
+	font-size: 0.5405405405405406rem;
+	color: white;
+	text-align: center;
+	line-height: 1.3243243243243243rem;
+	margin: 0 auto;
+	margin-top: 0.30405405405405406rem;
+}

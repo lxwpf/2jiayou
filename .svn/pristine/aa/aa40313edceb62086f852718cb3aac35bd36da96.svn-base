@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>实名认证</title>		
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		
+		<link rel="stylesheet" href="css/certification.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/certification2.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<input type="file" style="display: none;" class="upfile" id="FileUpload" name="file"/>
+		<input type="file" style="display: none;" class="upfile" id="FileUpload2" name="file"/>
+		<input type="file" style="display: none;" class="upfile" id="FileUpload3" name="file"/>
+		<input type="hidden" id="scsfzPic" /><!--手持身份证照片-->
+		<input type="hidden" id="idcard-up-pic" /><!--身份证正面-->
+		<input type="hidden" id="idcard-down-pic" /><!--身份证反面-->
+		<!--实名认证第二步-->
+		<div class="sencond">
+			<!--头部进度-->
+			<div class="head">
+				<div class="circle-manage">
+					<span class="circle-select"></span>
+					<span class="line-select"></span>
+					<span class="circle-select"></span>
+					<span class="line"></span>
+					<span class="circle"></span>
+				</div>
+				<div class="circle-text">
+					<span>基本信息</span>
+					<span class="span2">实名认证</span>
+					<span>完成认证</span>
+				</div>
+			</div>
+			<!--头部进度-->
+			
+			<!--提示-->
+			<div class="middle-hint">
+				<span>请上传您手持身份证照片</span>
+			</div>
+			
+			<!--请上传您手持身份证照片-->
+			<div class="upload-area">
+				<img class="upload-img-back dn" id="upload1-img"/>
+				<img class="idcard-img" src="img/common/addPic.png" id="upload1"/>
+			</div>
+			
+			<!--提示-->
+			<div class="middle-hint">
+				<span>请上传身份证正面</span>
+			</div>
+			
+			<!--请上传身份证正面-->
+			<div class="upload-area">
+				<img class="upload-img-back dn" id="upload2-img"/>
+				<img class="idcard-img" src="img/common/addPic.png" id="upload2"/>
+			</div>
+			
+			<!--提示-->
+			<div class="middle-hint">
+				<span>请上传身份证反面</span>
+			</div>
+			
+			<!--请上传身份证反面-->
+			<div class="upload-area">
+				<img class="upload-img-back dn" id="upload3-img"/>
+				<img class="idcard-img" src="img/common/addPic.png" id="upload3"/>
+			</div>
+			
+			<!--提交按钮-->
+			<div class="btn-submit">
+				<span>下一步</span>
+			</div>
+		</div>
+		<div class="hintBox dn" id="chint"></div>
+	</body>
+</html>

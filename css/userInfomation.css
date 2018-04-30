@@ -1,0 +1,99 @@
+html,body{
+	background: #f0eff5;
+}
+.head-hint{
+	font-family: PingFangSC-Regular;
+	font-size: 0.4864864864864865rem;
+	color: #FF8C00;
+	letter-spacing: 0;
+	margin: 2.4% 3.5% 0 2.7%;
+}
+.middle-area{
+	margin-top: 7%;
+}
+.item{
+	margin-left: 5.1%;
+	height: 1.3513513513513513rem;
+	border-bottom: 0.02702702702702703rem solid #ccc;
+	margin-right: 5.1%;
+	padding-top: 1.5%;
+	margin-top: 3%;
+}
+.icon-1{
+	display: inline-block;
+	height: 0.6756756756756757rem;
+	width: 0.6756756756756757rem;
+	background: url(../img/userInfomation/user.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -0.1891891891891892rem;
+	margin-right: 1.3%;
+}
+.icon-2{
+	display: inline-block;
+	height: 0.6756756756756757rem;
+	width: 0.6756756756756757rem;
+	background: url(../img/userInfomation/phone.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -0.1891891891891892rem;
+	margin-right: 1.3%;
+}
+.icon-3{
+	display: inline-block;
+	height: 0.6756756756756757rem;
+	width: 0.6756756756756757rem;
+	background: url(../img/userInfomation/area.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -0.1891891891891892rem;
+	margin-right: 1.3%;
+	float: left;
+}
+.icon-4{
+	display: inline-block;
+	height: 0.6756756756756757rem;
+	width: 0.6756756756756757rem;
+	background: url(../img/userInfomation/details-area.png) no-repeat;
+	background-size: 100% 100%;
+	vertical-align: -0.1891891891891892rem;
+	margin-right: 1.3%;
+}
+.real-name{
+	height: 1.151351rem;
+	width: 72%;
+	border: none;
+	background: #f0eff5;
+}
+.text-right{
+	font-family: PingFangSC-Regular;
+	font-size: 0.4864864864864865rem;
+	color: #FF8C00;
+	letter-spacing: 0;
+}
+.img-textarea{
+	height: 2.0666666666666667rem;
+	width: 6rem;
+	font-size:0.4864864864864865rem;
+	overflow: hidden;
+	display: inline-block;
+	border: none;
+	margin-left: 5.3%;
+}
+.textarea{
+	padding:0.2rem 0;
+	width: 94%;
+	height: 2.8666666666666667rem;
+	font-size:0.4864864864864865rem;
+	overflow:hidden;
+	border: none;
+	margin-left: 2.7%;
+	margin-top: 4.5%;
+}
+.submit-btn{
+	height: 1.2972972972972974rem;
+	line-height: 1.2972972972972974rem;
+	width: 100%;
+	text-align: center;
+	color: white;
+	background: #FF8C00;
+	margin-top: 17.8%;
+	font-size: 0.5405405405405406rem;
+}

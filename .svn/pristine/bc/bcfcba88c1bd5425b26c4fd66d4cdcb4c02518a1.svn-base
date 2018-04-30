@@ -1,0 +1,94 @@
+
+.dn{
+	display:none;
+}
+.db{
+	display:block;
+}
+/*清除浮动*/
+.clearfloat:after {
+	content: "020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfloat {
+	zoom: 1;
+}
+/*头部信息*/
+.head{
+	text-align: center;
+}
+.head .headIcon{
+	height: 3.6324324324324326rem;
+	width: 3.6324324324324326rem;
+	overflow: hidden;
+	margin-top: 1.0266666666666666rem;
+	text-align: center;
+}
+.head .version{
+	padding: 0.3333333333333333rem 0;
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+	letter-spacing: 0.024324324324324326rem;
+}
+/*头部信息*/
+/*简介*/
+.introduceWrapper{
+	margin: 0 0.4rem;
+}
+.introduceWrapper .title{
+	font-size: 0.6486486486486487rem;
+	color: #333333;
+	padding: 0.3333333333333333rem 0;
+	font-weight: bold;
+}
+.introduceWrapper .introduce{
+	font-size: 0.4864864864864865rem;
+	color: #666666;
+	margin-bottom: 1.3333333333333333rem;
+}
+/*简介*/
+/*联系我们*/
+.contactUsWrapper{
+	padding-bottom: 3.066666666666667rem;
+	position: relative;
+}
+.contactUs{
+	margin: 0 0.4rem;
+	float: left;
+}
+.contactUs .contactUsTitle{
+	font-size: 0.6486486486486487rem;
+	color: #333333;
+	font-weight: bold;
+	letter-spacing: 0.032432432432432434rem;
+}
+.contactUs p{
+	padding-top: 0.26666666666666666rem;
+}
+.contactUs p span{
+	font-size: 0.43243243243243246rem;
+	color: #333333;
+}
+.scanWx{
+	height: 3.5405405405405403rem;
+    width: 3rem;
+    position: absolute;
+    right: 0.36756756756756753rem;
+    top: 1.0144144054054054rem;
+}
+.scanWx .ercode{
+	height: 3.3783783783783785rem;
+	width: 3rem;
+}
+/*联系我们*/
+/*页脚*/
+.pageFoot{
+	text-align: center;
+	font-size: 0.32rem;
+	color: #888888;
+	padding-bottom: 0.9066666666666666rem;
+}
+/*页脚*/

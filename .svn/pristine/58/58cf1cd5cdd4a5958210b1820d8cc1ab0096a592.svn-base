@@ -1,0 +1,18 @@
+@charset "utf-8";
+.dn{
+	display:none;
+}
+.db{
+	display:block;
+}
+/*清除浮动*/
+.clearfloat:after {
+	content: "020";
+	display: block;
+	height: 0;
+	clear: both;
+	visibility: hidden;
+}
+.clearfloat {
+	zoom: 1;
+}

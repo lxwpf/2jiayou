@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>个人中心</title>			
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+
+		<!--微信分享-->
+		<script type="text/javascript" src="js/widget/wxshare/jweixin-1.2.0.js" ></script>
+		<script type="text/javascript" src="js/widget/wxshare/wxshare.js" ></script>
+		<!--微信分享-->
+		
+		<!--滑动js-->
+		<link rel="stylesheet" href="js/widget/swiper/swiper.css" /><!--swiper插件-->
+		<script type="text/javascript" src="js/widget/swiper/swiper.min.js" ></script><!--swiper插件-->		
+		<!--滑动js-->
+
+		<link rel="stylesheet" href="css/person.css" /><!--根据页面需要引入自己当前页css-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局js-->
+		<script type="text/javascript" src="js/person.js" ></script><!--根据页面需要引入自己当前页js-->
+	</head>
+	<body>
+		<!-- 个人中心信息展示title -->
+		
+			<div class="userInfoShow">
+				<a href="editInformation.html">
+					<div class="userInfoWrapper">
+						<div class="round">
+							<img class="userIcon" id="titleIcon"/>
+						</div>
+					</div>
+					<div class="userInfo-middle">
+						<div class="middle-text">
+							<span>昵称：<label id="nickName">twist</label></span>
+							<span>会员等级：3级</span>
+							<span>金币：23333</span>
+						</div>
+					</div>
+				</a>
+				<div class="right-userInfo">
+					<span class="come">签到</span>
+				</div>
+				<!--<img src="img/person/2.png" class="intoIcon"/>-->
+			</div>
+		
+		<!-- 个人中心信息展示title -->
+		<!-- 我的收藏 -->
+		<!--<div class="myStow">
+			<div class="stowContent">
+				<div id="jumpCollection">
+					<span class="stowText">我的收藏</span>
+					<img src="img/person/2.png" class="intoStow" />
+				</div>				
+				<div class="stowArticle" id="wrapper">
+					<div class="scroller swiper-container" id="myStowScroller">
+						<ul id="stowContent" class="swiper-wrapper">-->
+							<!--<li>
+								<img src="img/person/c-2.png" class="liImg" id="articleImg"/><p id="articleTitle">猫头鹰都笑了</p>
+							</li>-->
+						<!--</ul>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- 我的收藏 -->
+		<!-- 浏览历史 -->
+		<!--<div class="myStow">
+			<div class="stowContent">
+				<div id="jumpHistory">
+					<span class="histroyText">浏览历史 </span>
+					<img src="img/person/2.png" class="intoStow" />
+				</div>
+
+				<div class="stowArticle" id="wrapper11">					
+					<div class="scroller swiper-container">
+						<ul id="historyContent" class="swiper-wrapper">-->
+							<!--<li>
+								<img src="img/person/c-2.png" class="liImg" /><p>猫头鹰都笑了</p>
+							</li>-->
+						<!--</ul>
+					</div>
+				</div>
+			</div>
+		</div>-->
+		<!-- 浏览历史 -->
+		<!-- 底部列表 -->
+		<div class="userInfoList">
+			<ul>
+				<li class="myCard-icon">
+					<a href="myCard.html">
+						<span class="listText">我的卡包</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<li class="myStow-icon">
+					<a href="myCollection.html">
+						<span class="listText">我的收藏</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>	
+				<li class="history-icon">
+					<a href="browsingHistory.html">
+						<span class="listText">浏览历史</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<li class="myActivity-icon">
+					<a href="myActivity.html">
+						<span class="listText">我的活动</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<li class="vali-icon">
+					<a href="certification.html">
+						<span class="listText">实名认证</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<li class="back-icon">
+					<a href="feedback.html">
+						<span class="listText">意见反馈</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<li class="aboutUs-icon">
+					<a href="aboutUs.html">
+						<span class="listText">关于我们</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>
+				<!--<li class="mySend-icon">
+					<a href="aboutUs.html">
+						<span class="listText">我的发布</span>
+						<img src="img/person/2.png" class="into" />
+					</a>
+				</li>-->
+			</ul>
+		</div>
+		<!-- 底部列表 -->
+
+		<div class="nouse"></div>
+
+		<div class="footer">
+			<ul class="clearfloat">
+				<li>
+					<a href="housekeeper.html">
+						<img src="img/common/1.png" />
+					</a>
+				</li>
+				<li>
+					<a href="schoolPage.html">
+						<img src="img/common/2.png" />
+					</a>
+				</li>
+				<li>
+					<a href="activity.html">
+						<img src="img/common/6.png"/>
+					</a>
+				</li>
+				<li>
+					<a href="javascript:void(0)">
+						<img src="img/common/3-2.png" />
+					</a>
+				</li>				
+			</ul>
+		</div>		
+	</body>
+	<script>
+		
+	</script>
+</html>

@@ -1,0 +1,64 @@
+@charset "utf-8";
+.title{
+	margin-top: 1.0666666666666667rem;
+	text-align: center;
+	position: relative;
+	padding-bottom: 0.26666666666666666rem;
+	border-bottom: 0.013333333333333334rem solid #AAAAAA;
+}
+.title .text1{
+	font-size: 0.64rem;
+	color: #333333;
+}
+.title .jump{
+	position: absolute;
+	right: 0.6666666666666666rem;				
+	color: #aaaaaa;
+	font-size: 0.48rem;
+	line-height: 0.7866666666666666rem;
+}
+.intoText{
+	height: 1.2rem;
+	line-height: 1.6rem;
+	text-align: center;
+	color: #888888;
+	font-size: 0.4rem;
+}
+.wrapper{
+	margin: 0 0 0 0.64rem;
+}
+.wrapper span{
+	display: inline-block;
+	width: 46%;
+	height: 1.3333333333333333rem;
+	border-radius: 0.6666666666666666rem;
+	text-align: center;
+	line-height: 1.3333333333333333rem;
+	border: 0.013333333333333334rem solid #ff8c00;
+	margin-top: 0.9333333333333333rem;
+	font-size: 0.48rem;
+}
+.wrapper .selected{
+	background: #ff8c00;
+	color: white;
+	margin-right: 0.3rem;
+}
+.wrapper .noSelect{
+	background: white;
+	color: #ff8c00;
+	margin-right: 0.3rem;
+}
+
+.btn{
+	height: 1.2rem;
+	display: block;
+	background: #ffb62a;
+	border-radius: 0.13333333333333333rem;
+	margin: 0 0.6rem;
+	font-size: 0.4rem;
+	color: white;
+	text-align: center;
+	letter-spacing: 0.13333333333333333rem;
+	line-height: 1.2rem;
+	margin-top: 0.5333333333333333rem;
+}

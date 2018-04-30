@@ -1,0 +1,236 @@
+$(function(){
+	//当前页变量
+	var smallClassifyId = getQueryString('smallClassifyId');
+	var reallyToken = window.localStorage.getItem('token');
+
+	//改变title名
+	function changeTitle(arr) {
+		for(var i=0 ; i<arr.length ; i++){
+			if(arr[i].smallClassifyId === smallClassifyId){
+				$("title").html(arr[i].smallClassifyName);
+				$('#all').removeClass('active');
+				if(i<3){
+					$('#tabs li').eq(i).addClass('active');
+					$('#listBox li').eq(i).addClass('active');
+				}else{
+					$('#listBox li').eq(i).addClass('active');
+				}
+			}			
+		}
+	}
+	
+	//获取满屏高度，并设置html满屏颜色
+	function setBgColor() {
+		var height = $(document).height() + 'px';
+		$('html').css('height',height);
+		$('body').css('height',height);
+	}
+
+
+
+
+	//学院导航遍历方法
+	function showCenterNav(arr) {
+			var str = '';
+			var dom = $('#tabs');
+			
+			dom.html('');
+			
+			if(!arr.length){
+				return;
+			}			
+			for(var i = 0 ; i < 3 ; i++){			
+				str =  str +
+'				<li data-name="' + arr[i].smallClassifyId + '">'+
+					arr[i].smallClassifyName	+
+'				</li>'
+			}
+			dom.append(str);		
+	}
+	//学院导航2遍历方法
+	function showCenterNav2(arr) {
+			var str = '';
+			var dom = $('#listBox');
+			
+			dom.html('');
+			
+			if(!arr.length){
+				return;
+			}			
+			for(var i = 0 ; i < arr.length ; i++){			
+				str =  str +
+'				<li data-name="' + arr[i].smallClassifyId + '">'+
+					arr[i].smallClassifyName	+
+'				</li>'
+			}
+			dom.append(str);		
+	}		
+	//学院分类导航
+	function centerNavApi() {
+		$.ajax({
+			type:"post",
+			url: ajaxUrl + "/10202010",
+			data:{
+				token : reallyToken,
+				jobId : getTimeMs(),
+				classifyId : '200110000',
+			},
+			dataType:"json",
+			success:function(data){
+				//console.log(data);
+				showCenterNav(data.data);
+				showCenterNav2(data.data);
+				changeTitle(data.data);
+				
+				//点击全部	
+				$('#all').bind('click',function(){
+					$('#tabs li').removeClass('active');
+					$('#listBox li').removeClass('active');
+					$(this).addClass('active');	
+					$("title").html($(this).text());
+					centerListApi();
+				});			
+				//点击导航显示部分
+				$('#tabs li').bind('click',function(){
+					var index = $(this).index();
+					
+					$('#all').removeClass('active');
+					$('#listBox li').removeClass('active');
+					$('#tabs li').removeClass('active');			
+					$(this).addClass('active');
+					if(index < 5){
+						$('#listBox li').eq(index).addClass('active');
+					}					
+					$("title").html($(this).text());
+					var id = $(this).attr('data-name');
+					centerListApi2(id);
+				});	
+				//点击导航隐藏部分
+				$('#listBox li').bind('click',function(){
+					var index = $(this).index();
+					
+					$('#popupList').addClass('dn');
+					$('#all').removeClass('active');
+					$('#listBox li').removeClass('active');
+					$('#tabs li').removeClass('active');			
+					$(this).addClass('active');
+					if(index < 5){
+						$('#tabs li').eq(index).addClass('active');
+					}						
+					$("title").html($(this).text());
+					var id = $(this).attr('data-name');
+					centerListApi2(id);
+				});				
+			},
+			error:function(error){
+				console.log(error);	
+			}
+		});		
+	}	
+
+
+
+
+
+
+
+	//学院分类列表遍历
+	function showCenterList(arr) {
+			var str = '';
+			var dom = $('#recommendList');
+			
+			dom.html('');
+
+			if(!arr.length){
+				return;
+			}
+			
+			for(var i = 0 ; i < arr.length ; i++){			
+				var isVideo = arr[i].type == 4 ? ' ' : 'dn';
+				var isMusic = arr[i].type == 5 ? ' ' : 'dn';
+				
+				var jumpTxt = arr[i].type == 4 ? 'newMultimedia.html' :
+				              arr[i].type == 5 ? 'newMultimedia.html' :
+				                                 'newArticle.html';
+				
+				str =  str +
+'					<li>'+
+'						<a class="passageImg" href="' + jumpTxt + '?classify=' + arr[i].classify + '&materialId=' + arr[i].materialId + '&classifyId=' + arr[i].classifyId +'&centreClassifyId=' + arr[i].centreClassifyId + '&smallClassifyName=' + name + '&numApplaud=' + arr[i].numApplaud + '&numUser=' + arr[i].numUser + '&onlineTime=' + arr[i].onlineTime +'">'+
+'							<img src="' + arr[i].lookPicUrl + '" class="pic"  />'+
+'							<img src="img/common/4.png" class="video ' + isVideo + '" />'+
+'							<img src="img/common/5.png" class="music ' + isMusic + '" />'+
+'						</a>'+
+'						<div class="passageTxt">'+
+'							<a class="headings" href="' + jumpTxt + '?classify=' + arr[i].classify + '&materialId=' + arr[i].materialId + '&classifyId=' + arr[i].classifyId +'&centreClassifyId=' + arr[i].centreClassifyId + '&smallClassifyName=' + name + '&numApplaud=' + arr[i].numApplaud + '&numUser=' + arr[i].numUser + '&onlineTime=' + arr[i].onlineTime +'">' + arr[i].title + '</a>'+
+'							<div class="infor">'+
+'								<div class="read">阅读量 <span>' + arr[i].numRead + '</span></div>'+
+'							</div>'+
+'							<div class="infor">'+
+'								<div class="type">' + arr[i].smallClassifyName + '</div>'+
+'							</div>'+
+'						</div>'+
+'					</li>'
+				
+			}
+			dom.append(str);				
+	}	
+	//学院全部列表
+	function centerListApi() {
+		$.ajax({
+			type:"post",
+			url: ajaxUrl + "/10202020",
+			data:{
+				token : reallyToken,
+				jobId : getTimeMs(),
+				pageCurrent : '1',
+				classifyId : '200110000',
+			},
+			dataType:"json",
+			success:function(data){
+				console.log(data);
+				showCenterList(data.data);
+			},
+			error:function(error){
+				console.log(error);	
+			}
+		});		
+	}
+	//学院各个标签分类列表
+	function centerListApi2(id) {
+		$.ajax({
+			type:"post",
+			url: ajaxUrl + "/10202020",
+			data:{
+				token : reallyToken,
+				jobId : getTimeMs(),
+				pageCurrent : '1',
+				classifyId : id,
+			},
+			dataType:"json",
+			success:function(data){
+				//console.log(data);
+				showCenterList(data.data);
+			},
+			error:function(error){
+				console.log(error);	
+			}
+		});		
+	}
+	
+	//点击导航箭头，出现分类菜单
+	$('#more').bind('click',function(){
+		$('#popupList').removeClass('dn');
+	});
+	//关闭分类列表弹窗
+	$('#close').bind('click',function(){
+		$('#popupList').addClass('dn');
+	});
+	
+	
+	//第一次加载
+	setBgColor();	
+	centerNavApi();
+	centerListApi2(smallClassifyId);	
+	//加载微信分享
+	loadWeixinShare('');
+});

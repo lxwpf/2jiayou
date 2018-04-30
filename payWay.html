@@ -1,0 +1,78 @@
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<!--<link rel="shortcut icon" href="http://116.62.22.225/static/ico.ico">-->
+		<meta name="App-Config" content="fullscreen=yes,useHistoryState=yes,transition=yes">
+		<meta content="telephone=no,email=no" name="format-detection">
+		<meta content="yes" name="apple-touch-fullscreen">
+		<meta content="yes" name="apple-mobile-web-app-capable">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black" />
+		<meta name="keywords" content="家游学院">
+		<meta name="description" content="家游学院">
+		<title>支付方式</title>
+		<link rel="stylesheet" href="css/common/reset.css" /><!--样式重置-->
+		<link rel="stylesheet" href="css/common/common.css" /><!--公共样式-->
+		<link rel="stylesheet" href="css/payWay.css" />
+		
+		<script type="text/javascript" src="js/common/flexible.js" ></script><!--flexible适配-->
+		<script type="text/javascript" src="js/common/jquery-1.11.1.min.js" ></script><!--引入jquery-->
+		<script type="text/javascript" src="js/common/methods.js" ></script><!--公用方法-->
+		<script type="text/javascript" src="js/common/variable.js" ></script><!--全局变量-->
+	</head>
+	<body>
+	<form action="" id="payForm" name="payForm" method="POST">
+		<input type="hidden" name="token" id="token" >
+		<input type="hidden" name="materialId" id="materialId" >
+		<input type="hidden" name="materialClassify" id="materialClassify" >
+	</form>
+		<div class="pay-container">
+			<div class="up">
+				<div class="title margin-comm-left">订单详情：</div>
+				<div class="small-bottom-line"></div>
+				<div class="pay-content margin-comm-left margin-comm-right">
+					<img src="img/payPag/scan.png" />
+					<p class="fontSize18">《普洱茶上看到那实打实的吧基本上都撒大苏打撒旦撒大苏打》</p>
+				</div>
+				<div class="small-bottom-line"></div>
+				<div class="margin-comm-right">
+					<div class="right fontSize18">
+						共<span class="fontSize18">10</span>集  
+						合计：<span class="fontSize18">19</span>元
+					</div>
+				</div>
+			</div>
+			<div>
+				<div class="bottom-line"></div>
+				<div class="money margin-comm-left" >
+					<span class="fontSize18">微信账户支付</span>
+					<span class="span-two dn"><img src="img/payWay/gou-selected.png" class="gou"/></span>
+				</div>
+				<div class="small-bottom-line"></div>
+				<div class="money margin-comm-left">
+					<span class="fontSize18">微信扫码支付</span>
+					<span class="span-two dn"><img src="img/payWay/gou-selected.png" class="gou"/></span>
+				</div>
+				<div class="small-bottom-line"></div>
+				<div class="money margin-comm-left">
+					<span class="fontSize18">微信找人代付</span>
+					<span class="span-two dn"><img src="img/payWay/gou-selected.png" class="gou"/></span>
+				</div>
+				<!--<div class="small-bottom-line"></div>
+				<div class="money margin-comm-left">
+					<span class="fontSize18">支付宝支付</span>
+					<span class="span-two dn"><img src="img/payWay/gou-selected.png" class="gou"/></span>
+				</div>-->
+			</div>
+		</div>
+		<div class="sure-btn">确认支付</div>
+		<script type="text/javascript" src="js/payWay.js" ></script><!--支付设置-->
+		<script>	
+			$(".money").on("click",function(){
+				$(this).addClass("orange-color");
+				$(this).siblings(".money").removeClass("orange-color");
+				$(this).children(".span-two").removeClass("dn");
+				$(this).siblings(".money").children(".span-two").addClass("dn");
+			});
+		</script>
+	</body>
+</html>
